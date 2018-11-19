@@ -1,0 +1,32 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>工作台 - April</title>
+
+    <link href="~/Public/styles/iconfontNew.css" rel="stylesheet" />
+    <link href="~/Public/styles/rollingTable.css" rel="stylesheet" />
+    <link href="~/Public/styles/inputError.css" rel="stylesheet" />
+    @Styles.Render("~/Bundles/App/vendor/css")
+    @Styles.Render("~/Bundles/App/Main/css")
+    @Scripts.Render("~/Bundles/App/vendor/js")
+    @Scripts.Render("~/Bundles/App/Main/js")
+</head>
+
+<body class="fixed sidebar-mini skin-blue" style="overflow-y:hidden" ng-controller="layout as vm" on>
+    <div class="wrapper">
+        @Html.Action("ToolBar", "PersonalCenter")
+
+
+        <div class="content-wrapper" id="content-Scroll">           
+            <div ui-view=""></div>
+        </div>
+    </div>
+</body>
+</html>

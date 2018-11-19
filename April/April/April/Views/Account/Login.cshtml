@@ -1,0 +1,47 @@
+﻿
+@{
+    Layout = null;
+    ViewBag.Title = "Login";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="April" name="description" />
+    <meta content="April" name="author">
+    <title>登录 - April</title>
+    <link href="/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Content/font-awesome.min.css" rel="stylesheet" />    
+    <link href="/Views/Account/login.css" rel="stylesheet" />
+</head>
+<body>
+    
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+            <div class="form-horizontal">
+                <input type="hidden" id="returnUrl" name="returnUrl" value="@ViewBag.ReturnUrl"/>
+                <span class="heading">用户登录</span>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="userName" placeholder="用户名或手机号">
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="form-group help">
+                    <input type="password" class="form-control" id="password" placeholder="密　码">
+                    <i class="fa fa-lock"></i>
+                    <a href="#" class="fa fa-question-circle"></a>
+                </div>
+                <div class="form-group">                                        
+                    <button type="submit" id="login" class="btn btn-default">登录</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/jquery/jquery-2.1.4.min.js"></script>
+<script src="~/Scripts/bootstrap/bootstrap.min.js"></script>
+<script src="/Views/Account/login.js"></script>
+</body>
+</html>

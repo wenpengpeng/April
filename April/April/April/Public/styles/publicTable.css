@@ -1,0 +1,107 @@
+﻿li{
+    list-style:none;
+}
+table th , table td{
+    text-align:center;
+}
+
+/*表格一样式*/
+*{
+    margin:0;
+    padding:0;
+}
+.publicTableContainer{
+    margin-top:10px;
+}
+.publicTableContainer{
+    width:100%;
+}
+.pagination {
+    float:right;
+}
+.table-td-left {
+    text-align: left !important;
+    padding-left: 10px;
+}
+.publicTableContainer > .table, .publicTableContainerList > .table {
+    border:1px solid #f4f4f4;
+}
+.publicTableContainer > .table > thead > tr th {
+    text-align: left;
+    height: 50px;
+    vertical-align: middle;
+    padding: 0 5px;
+}
+.publicTableContainer > .table .label {
+    padding:5px 10px;
+}
+.publicTableContainer > .table > tbody > tr td {
+    text-align: left;
+    height: 50px;
+    vertical-align: middle;
+    padding: 0 5px;
+}
+
+.publicTableContainer > .table > thead > tr:first-child {
+    background: #f0f0f0;
+}
+.publicTableContainer > .table > tbody > tr>td:first-child,
+.publicTableContainer > .table > thead > tr>th:first-child
+{
+    padding-left:15px !important;
+}
+
+.publicTableContainer> table a{
+    color: #3a99e1;
+    cursor:pointer;
+}
+
+.publicTableContainer>tr td{
+    border-top: none;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.publicTableContainer>.table>tbody>tr:last-child{
+    border-bottom:1px solid #f4f4f4;
+}
+
+/*表格二样式*/
+.table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
+    border-bottom-width: 1px;
+}
+.publicTableContainerList > .table >thead>tr>th {
+    vertical-align:middle;
+    height:50px;
+    text-align: left;
+    width: 200px;
+}
+.publicTableContainerList > .table > tbody > tr > td {
+    vertical-align: middle;
+    height: 50px;
+    text-align: left;
+    width: 200px;
+}
+
+/**表格对齐方式**/
+.publicTableLeft{
+    text-align:left !important;
+}
+.publicTableCenter{
+    text-align:center !important;
+}
+.publicTableRight{
+    text-align:right !important;
+}
+.publicTableFirstTd0{
+    padding-left:15px;
+}
+.publicTableBond0{
+    padding-right:2.5%!important;
+}
+.publicTableLastTd0{
+    padding-right:15px !important;
+}
+
+/*.publicTableTs0{
+    padding:0 5px 0 15px !important;
+}*/

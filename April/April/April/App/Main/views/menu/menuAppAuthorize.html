@@ -1,0 +1,62 @@
+﻿<div>
+    <div class="modal-header">
+        <h3 class="modal-title">菜单接口访问授权</h3>
+    </div>
+    <form class="form-horizontal">
+        <div class="modal-body">
+            <div class="box-body" ng-cloak>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">菜单名称</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" ng-readonly="vm.menu.id" ng-model="vm.menu.displayName" placeholder="菜单名称">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">接口授权</label>
+                    <div class="col-sm-10">
+                        <table class="table table-bordered table-hover dataTable tree" role="grid">
+                            <thead>
+                            <tr role="row">
+                                <th class="col-sm-2" rowspan="1" colspan="1">分类</th>
+                                <th class="col-sm-10"  rowspan="1" colspan="1">操作列表</th>
+                            </tr>
+                            </thead>
+                            <tbody ng-cloak>
+                            <tr ng-repeat="item in vm.data">
+                                <td class="app-authorize">
+                                    {{item.name}}
+                                </td>
+                                <td>
+                                    <div class="row">
+                                        <div appcode="{{item.code}}" class="col-sm-3 app-method" ng-repeat="appMethod in item.appMethodAuthorizes">
+                                            <input type="checkbox" ng-checked="appMethod.isCheck" desc="{{appMethod.description}}" code="{{appMethod.code}}"/>
+                                            {{appMethod.description}}
+                                        </div>
+                                    </div>
+      
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-default" type="button" ng-click="vm.cancel()">取消</button>
+            <button class="btn btn-primary" type="button"  ng-click="vm.save()">
+                <i class="fa fa-save"></i>
+                <span>
+                    保存
+                </span>
+            </button>
+        </div>
+    </form>
+</div>
+
+<!--如需设置宽带请手动设置-->
+<style type="text/css">
+    .modal-dialog {
+        width: 800px;
+    }
+</style>

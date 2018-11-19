@@ -1,0 +1,132 @@
+﻿
+.review_rule_bg {
+    background: #fafafa;
+}
+.text_top{
+    vertical-align:text-top;
+    margin-right:10px!important;
+}
+.width_100{
+    width:100%!important;
+}
+.width_10 {
+    width: 10%!important;
+}
+.width_60 {
+    width: 60%!important;
+}
+.width_15 {
+    width: 15%!important;
+}
+.width_85{
+    width:85%;
+}
+.width_22 {
+    width: 22% !important;
+}
+.width_75{
+    width:75%!important;
+}
+.width_8{
+    width:8%!important;
+}
+
+/*评议规则*/
+.embed_table_fixed{
+    width:100%;
+}
+.embed_table_fixed tr td{
+    border:1px solid #d6d6d6;
+}
+.embed_table_fixed tr td textarea{
+    border:none;
+    resize:none;
+    height:50px;
+}
+.embed_table_fixed tr a{
+    color:red;
+}
+.integratedBidCreate_td0{
+    font-weight:600;
+    background:#fff;
+}
+
+
+/*评议打分*/
+.review_score .padding_0 {
+    padding: 0;
+}
+.review_score .embed_table_fixed tr td {
+    border: none;
+}
+.border_left {
+    border-left: 1px solid #f1f1f1 !important;
+}
+.review_score .padding_8_and_15 {
+    line-height: 1.8;
+    text-align: left;
+}
+
+/*条纹表格*/
+.stripe_table tbody tr:nth-of-type(2n) {
+    background: #f7f7f7;
+}
+
+
+/*第二套评议打分*/
+.secondRuleScore .table{
+    margin:0;
+}
+/*.secondRuleScore thead .width_pct_70 > .float_left{
+    line-height: 50px;
+    border-right:1px solid #f1f1f1;
+}
+.secondRuleScore thead .width_pct_70 > .float_left:last-child{
+    border-right: none;
+}*/
+.secondRuleScore .table td{
+    height:50px;
+    vertical-align:middle;
+    border-right:1px solid #f1f1f1;
+}
+.secondRuleScore .table td:last-child{
+    border-right:none;
+}
+.secondRuleScore .table td .width_pct_20{
+    height:40px;
+    vertical-align:middle;
+}
+.secondRuleScore .padding_0 {
+    padding: 0;
+}
+.secondRuleScore .two_part {
+    position:relative;
+}
+.secondRuleScore .two_part .width_pct_85{
+    padding:8px;
+    border-right:1px solid #f1f1f1;
+}
+.secondRuleScore .single_weight {
+    position: absolute;
+    display:inline-block;
+    width:15%;
+    right:0;
+    top:50%;
+    margin-top:-10px;
+    text-align:center;
+}
+.secondRuleScore .width_pct_10{
+    width:10%!important;
+}
+.secondRuleScore .width_pct_15 {
+    width: 15%!important;
+}
+.secondRuleScore .width_pct_70 {
+    width:70%!important;
+}
+.secondRuleScore .width_pct_85 {
+    width:85%!important;
+}
+.secondRuleScore th.padding_0 .inline_block {
+    padding-left:8px;
+}

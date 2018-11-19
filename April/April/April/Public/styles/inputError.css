@@ -1,0 +1,11 @@
+﻿.form-group.has-error label {
+    color: #666!important;
+}
+.form-group.has-error{
+    position:relative;
+}
+.form-group.has-error .help-block {
+    position:absolute;
+    margin:0;
+    line-height:1.1;
+}

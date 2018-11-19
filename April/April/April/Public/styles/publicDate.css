@@ -1,0 +1,64 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+/*
+    date日历样式
+*/
+.publicContainerFormDate {
+    width: auto;
+    height: auto;
+}
+.publicContainerFormDate>.form-group>.publicContainerFormDateLabel{
+    height: 40px;
+    vertical-align: top;
+    line-height: 40px;
+    font-weight:500;
+}
+.publicContainerFormDate>.form-group>.date{
+    width: 200px;
+    height: 40px;
+    padding-left:0px;
+    display:inline-table;
+    margin-left:15px;
+    border:1px solid #ccc;
+}
+.publicContainerFormDate>.form-group>.date .fa-calendar{
+    color:#d2d6de;
+}
+.publicContainerFormDate>.form-group>.date>.publicContainerFormDatePic{
+    height: 40px;
+    border:none;
+    background:#fff;
+}
+.publicContainerFormDate>.publicContainerFormDatePoint{
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 40px;
+    vertical-align: top;
+    line-height: 40px;
+}
+.publicContainerFormDate>.form-group{
+    display: inline-table;
+}
+.publicContainerFormDate>.form-group>.date>.input-group-addon{
+    border:none;
+}
+.publicContainerFormDate>.form-group>.date:focus{
+    border:1px solid red;
+}
+
+.form-group .date {
+    border: 1px solid #d2d6de;
+}
+.form-group .date input{
+    border:none;
+    background:#fff;
+}
+.form-group .date .input-group-addon{
+    border:none;
+}
+.form-group .date .input-group-addon i {
+    color: #d2d2d2!important;
+}

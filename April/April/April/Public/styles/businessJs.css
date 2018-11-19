@@ -1,0 +1,113 @@
+﻿
+/*商务与技术条款表格*/
+.business_th_w {
+    width: 13% !important;
+}
+.business_th_x {
+    width: 5% !important;
+}
+.business_tr_font > th {
+    color: #444;
+    vertical-align: middle !important;
+    width: 7%;
+}
+.business_tr_font > td {
+    color: #666;
+    vertical-align: middle !important;
+}
+.business_td_bz0{
+    border:1px solid #ddd;
+    color:#888;
+    font-size:12px;
+    text-align:center;
+    padding:1px 5px;
+    cursor:pointer;
+}
+.business_td_bz1 {
+    display: inline-block;
+    margin-right: 8%;
+    vertical-align: inherit;
+    text-align:left;
+}
+
+.business_tr_font_iphone0{
+    margin-left:-38px;
+}
+.business_price0{
+    width: 100%;
+    text-align: right;
+    margin-top: 40px;
+    color:#666;
+}
+.business_btn_f0 {
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-top:40px;
+    margin-bottom:30px;
+}
+
+/*后新增class*/
+.supplierQuotesIn_th0{
+    width:26% !important;
+}
+.supplierQuotesIn_th1{
+    width:16% !important;
+}
+.supplierQuotesIn_th2{
+    width:6% !important;
+}
+.award_th_w0{
+    width:10% !important;
+}
+.award_th_w1{
+    width:7% !important;
+}
+.award_th_w2{
+    width:14% !important;
+}
+.secondPublic_xy0>p{
+   margin:0;
+   line-height:30px;
+   color:#666;
+}
+.secondPublic_color0{
+    color:#444 !important;
+}
+.secondPublic_white{
+    white-space:nowrap;
+}
+
+
+/*报价明细头部*/
+.quote_infor_header .float_left{
+    margin-right:35px;
+    margin-top:7px;
+}
+.quote_infor_header{
+    margin-bottom:20px;
+    overflow:hidden;
+}
+.quote_infor_header .red_required{
+    font-size:20px;
+    font-weight:bold;
+}
+
+
+
+/*滚动条样式*/
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(77,77,77,.3);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-button {
+    display: none;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(77,77,77,.3);
+    border-radius: 4px;
+}
+

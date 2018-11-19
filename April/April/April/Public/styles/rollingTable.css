@@ -1,0 +1,367 @@
+﻿/*第一种fixtable滚动表格  单层内容 + 可用双层标题 */
+.firstFixedTable .fixed-table-box {
+    width: 100%;
+}
+.firstFixedTable .fixed-table-box th, .firstFixedTable .fixed-table-box td {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: middle;
+    height: 50px;
+    text-align: left;
+}
+.firstFixedTable .cell {
+    display: block;
+    word-break: break-all;
+}
+.firstFixedTable .fixed-table-box > .fixed-table_body-wraper {
+    max-height: 259px;
+}
+
+.firstFixedTable .fixed-table_fixed > .fixed-table_body-wraper {
+    max-height: 250px;
+}
+.firstFixedTable .fixed-table_fixed-left {
+    height: auto !important;
+}
+.firstFixedTable .cell a {
+    margin-right: 15px;
+    cursor: pointer;
+}
+.firstFixedTable .cell a:last-child{
+    margin-right:0;
+}
+.firstFixedTable .number {
+    margin-left: 15px;
+}
+/*固定表格价格居右样式*/
+.firstFixedTable .fixed-table-box .pricePadding {
+    text-align: right;
+}
+/*固定表格嵌入表格父级th的padding去掉样式*/
+.firstFixedTable .padding_0 {
+    padding: 0 !important;
+}
+
+/*二层标题表格th样式*/
+.firstFixedTable .fixed-table-box.twoRowTitleTable th {
+    height: 40px;
+}
+
+.firstFixedTable .twoRowTitleTable .fixed-table_fixed-left th {
+    height: 81px;
+}
+
+/*下方总计*/
+.firstFixedTable .col-sm-6 div {
+    padding-left: 0;
+}
+/*表格某块背景色*/
+.firstFixedTable .fixed-table-box .bgf2cbb6 {
+    background: #f2cbb6;
+}
+.firstFixedTable .fixed-table-box .bg_78c7aa {
+    background: #78c7aa;
+}
+
+
+
+
+
+/*第二套 ui-grid 滚动表格*/
+.secondFixedTable .ui-grid-header-cell-wrapper .ui-grid-invisible{
+    display:none;
+}
+.secondFixedTable .ui-grid-footer-panel .ui-grid-footer-cell {
+    border: none;
+}
+.secondFixedTable .ui-grid-cell-contents {
+    padding:8px;
+    outline:none;
+}
+/*待定使用*/
+.secondFixedTable .ui-grid-cell-Padding8px {
+    padding: 8px;
+}
+.secondFixedTable .ui-grid-header-cell {
+    background: #f4f4f4;
+    border-right-color:#f1f1f1;
+}
+.secondFixedTable .ui-grid {
+    height:435px!important;
+}
+.secondFixedTable .ui-grid .ui-grid-render-container-left .ui-grid-viewport{
+    height: 348px;
+}
+/*解决滚动条对不齐*/
+.secondFixedTable .ui-grid-scrollbar-placeholder{
+    height: 0!important;
+}
+
+.secondFixedTable .ui-grid .ui-grid-render-container-body .ui-grid-viewport {
+    height: 348px;
+}
+.secondFixedTable .ui-grid .ui-grid-render-container-right .ui-grid-viewport{
+    height: 348px;
+}
+.secondFixedTable .ui-grid .ui-grid-row,
+.secondFixedTable .ui-grid .ui-grid-cell,
+.secondFixedTable .ui-grid .ui-grid-cell .ui-grid-vertical-bar {
+    height: 34px;
+}
+.secondFixedTable .ui-grid-pager-row-count-picker select {
+    height: 26px !important;
+    padding: 0;
+    box-shadow: none!important;
+    outline: none!important;
+}
+.secondFixedTable .ui-grid-cell{
+    border-right-color:#f1f1f1;
+}
+.secondFixedTable .ui-grid-row:nth-child(even) .ui-grid-cell {
+    background: #fff;
+    border-top: 1px solid #f1f1f1;
+}
+.secondFixedTable .ui-grid-row:nth-child(odd) .ui-grid-cell {
+    background:#fff;
+    border-top: 1px solid #f1f1f1;
+}
+.secondFixedTable .ui-grid-pinned-container.ui-grid-pinned-container-left .ui-grid-cell:last-child {
+    border-right-color: #f1f1f1;
+}
+.secondFixedTable .ui-grid-canvas {
+    padding-top: 0;
+    margin-top:-1px;
+}
+.secondFixedTable .ui-grid-pinned-container.ui-grid-pinned-container-right .ui-grid-cell:first-child {
+    border-left-color: #f1f1f1;
+}
+.secondFixedTable .ui-grid-pinned-container.ui-grid-pinned-container-right .ui-grid-header-cell:first-child {
+    border-left-color: #f1f1f1;
+}
+.secondFixedTable .ui-grid-pinned-container.ui-grid-pinned-container-left .ui-grid-header-cell:last-child {
+    border-right-color: #f1f1f1;
+}
+.secondFixedTable .ui-grid-cell input[type="checkbox"] {
+    margin-left: 0;
+    margin-top:12px;
+}
+.secondFixedTable a {
+    cursor: pointer;
+    color: #44a5ef;
+    margin-right:10px;
+}
+.secondFixedTable .ui-grid-header-cell input[type=checkbox],
+.secondFixedTable .ui-grid-header-cell input[type=radio] {
+    margin-top: 12px;
+}
+.secondFixedTable .ui-grid-pager-control * {
+    box-shadow: none!important;
+    outline: none!important;
+}
+.secondFixedTable .ui-grid-pager-container > span {
+    margin-top: 4px;
+    display:inline-block;
+}
+.secondFixedTable .ui-grid-pager-control button {
+    background-color: #fff;
+}
+.secondFixedTable .ui-grid-pager-control .ui-grid-pager-max-pages-number{
+    vertical-align:sub;
+}
+.secondFixedTable .ui-grid-pager-control .ui-grid-pager-max-pages-number abbr{
+    display:inline-block;
+    margin-top:-4px;
+}
+.secondFixedTable .ui-grid-pager-control button:focus,
+.secondFixedTable .ui-grid-pager-control button:active:focus,
+.secondFixedTable .ui-grid-pager-control button.active:focus,
+.secondFixedTable .ui-grid-pager-control button.focus,
+.secondFixedTable .ui-grid-pager-control button:active.focus,
+.secondFixedTable .ui-grid-pager-control button.active.focus {
+    outline: none;
+    outline-offset: 0px;
+    background: #44a5ef;
+}
+.secondFixedTable .ui-grid-pager-control button:hover,
+.secondFixedTable .ui-grid-pager-control button:focus,
+.secondFixedTable .ui-grid-pager-control button.focus {
+    background: #44a5ef;
+}
+.secondFixedTable .ui-grid-pager-control button:hover .last-triangle,
+.secondFixedTable .ui-grid-pager-control button:focus .last-triangle,
+.secondFixedTable .ui-grid-pager-control button.focus .last-triangle{
+    border-color: transparent transparent transparent #fff;
+}
+.secondFixedTable .ui-grid-pager-control button:hover .last-bar,
+.secondFixedTable .ui-grid-pager-control button:focus .last-bar,
+.secondFixedTable .ui-grid-pager-control button.focus .last-bar{
+    border-left: 2px solid #fff; 
+}
+.secondFixedTable .ui-grid-pager-control button:hover .first-triangle,
+.secondFixedTable .ui-grid-pager-control button:focus .first-triangle,
+.secondFixedTable .ui-grid-pager-control button.focus .first-triangle{
+    border-color: transparent #fff transparent transparent;  
+}
+.secondFixedTable .ui-grid-pager-control button:hover .first-bar,
+.secondFixedTable .ui-grid-pager-control button:focus .first-bar,
+.secondFixedTable .ui-grid-pager-control button.focus .first-bar{
+    border-left: 2px solid #fff; 
+}
+.secondFixedTable .ui-grid-pager-control button.disabled:hover,
+.secondFixedTable .ui-grid-pager-control button[disabled]:hover,
+.secondFixedTable fieldset[disabled] .ui-grid-pager-control button:hover, 
+.secondFixedTable .ui-grid-pager-control button.disabled:focus,
+.secondFixedTable .ui-grid-pager-control button[disabled]:focus,
+.secondFixedTable fieldset[disabled] .ui-grid-pager-control button:focus, 
+.secondFixedTable .ui-grid-pager-control button.disabled.focus,
+.secondFixedTable .ui-grid-pager-control button[disabled].focus, 
+.secondFixedTable fieldset[disabled] .ui-grid-pager-control button.focus {
+    background-color: #f3f3f3;
+}
+.secondFixedTable .ui-grid-pager-control button.disabled:hover .last-triangle,
+.secondFixedTable .ui-grid-pager-control button[disabled]:hover .last-triangle,
+.secondFixedTable fieldset[disabled] .ui-grid-pager-control button:hover .last-triangle, 
+.secondFixedTable .ui-grid-pager-control button.disabled:focus .last-triangle,
+.secondFixedTable .ui-grid-pager-control button[disabled]:focus .last-triangle,
+.secondFixedTable fieldset[disabled] .ui-grid-pager-control button:focus .last-triangle, 
+.secondFixedTable .ui-grid-pager-control button.disabled.focus .last-triangle,
+.secondFixedTable .ui-grid-pager-control button[disabled].focus .last-triangle, 
+.secondFixedTable fieldset[disabled] .ui-grid-pager-control button.focus .last-triangle{
+    border-color: transparent transparent transparent #ccc;
+}
+.secondFixedTable .ui-grid-pager-control button.disabled:hover .last-bar,
+.secondFixedTable .ui-grid-pager-control button[disabled]:hover .last-bar,
+.secondFixedTable fieldset[disabled] .ui-grid-pager-control button:hover .last-bar, 
+.secondFixedTable .ui-grid-pager-control button.disabled:focus .last-bar,
+.secondFixedTable .ui-grid-pager-control button[disabled]:focus .last-bar,
+.secondFixedTable fieldset[disabled] .ui-grid-pager-control button:focus .last-bar, 
+.secondFixedTable .ui-grid-pager-control button.disabled.focus .last-bar,
+.secondFixedTable .ui-grid-pager-control button[disabled].focus .last-bar, 
+.secondFixedTable fieldset[disabled] .ui-grid-pager-control button.focus  .last-bar{
+     border-left: 2px solid #ccc; 
+}
+.secondFixedTable .ui-grid-pager-control button.disabled:hover .first-triangle,
+.secondFixedTable .ui-grid-pager-control button[disabled]:hover .first-triangle,
+.secondFixedTable fieldset[disabled] .ui-grid-pager-control button:hover .first-triangle, 
+.secondFixedTable .ui-grid-pager-control button.disabled:focus .first-triangle,
+.secondFixedTable .ui-grid-pager-control button[disabled]:focus .first-triangle,
+.secondFixedTable fieldset[disabled] .ui-grid-pager-control button:focus .first-triangle, 
+.secondFixedTable .ui-grid-pager-control button.disabled.focus .first-triangle,
+.secondFixedTable .ui-grid-pager-control button[disabled].focus .first-triangle, 
+.secondFixedTable fieldset[disabled] .ui-grid-pager-control button.focus .first-triangle{
+    border-color: transparent #ccc transparent transparent;
+    opacity:.8;
+}
+.secondFixedTable .ui-grid-pager-control button.disabled:hover .first-bar,
+.secondFixedTable .ui-grid-pager-control button[disabled]:hover .first-bar,
+.secondFixedTable fieldset[disabled] .ui-grid-pager-control button:hover .first-bar, 
+.secondFixedTable .ui-grid-pager-control button.disabled:focus .first-bar,
+.secondFixedTable .ui-grid-pager-control button[disabled]:focus .first-bar,
+.secondFixedTable fieldset[disabled] .ui-grid-pager-control button:focus .first-bar, 
+.secondFixedTable .ui-grid-pager-control button.disabled.focus .first-bar,
+.secondFixedTable .ui-grid-pager-control button[disabled].focus .first-bar, 
+.secondFixedTable fieldset[disabled] .ui-grid-pager-control button.focus .first-bar{
+    border-left: 2px solid #ccc;
+    opacity:.8;
+}
+.secondFixedTable .ui-grid-footer-info {
+    position: absolute;
+    left: 440px;
+    bottom: 0;
+    padding-top: 4px;
+    z-index:2;
+    width:150px;
+}
+.secondFixedTable abbr[data-original-title], 
+.secondFixedTable abbr[title] {
+    text-decoration: none;
+    border: none;
+}
+.secondFixedTable .ui-grid-footer-panel.ui-grid-footer-aggregates-row {
+    height: 15px;
+}
+
+
+
+
+
+
+
+/*基于fixeTable的滚动表格 , 双层标题 + 双层内容*/
+.thirdFixedTable .fixed-table_fixed thead tr {
+    height: 70px;
+}
+.thirdFixedTable .cell {
+    display: block;
+    word-break: break-all;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.thirdFixedTable .table{
+    margin-bottom:0;
+}
+.thirdFixedTable .padding_0{
+    padding:0;
+}
+.thirdFixedTable .topAndBottom_0 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.thirdFixedTable .manyDataTable th,
+.thirdFixedTable .manyDataTable td{
+    padding:5px;
+}
+.thirdFixedTable .manyDataTable tr:last-child td{
+    border-bottom:none;
+}
+.thirdFixedTable .manyDataTable tr td:last-child{
+    border-right-color:transparent;
+}
+.thirdFixedTable .borderColorNone {
+    border-color: transparent;
+}
+.thirdFixedTable .borderLeftColorNone {
+    border-left-color: transparent;
+}
+.thirdFixedTable .borderRightColorNone {
+    border-right-color: transparent;
+}
+.thirdFixedTable .borderTopColorNone {
+    border-top-color: transparent;
+}
+.thirdFixedTable .borderBottomColorNone {
+    border-bottom-color: transparent;
+}
+.thirdFixedTable .manyDataTable th,
+.thirdFixedTable .manyDataTable td,
+.thirdFixedTable .cell {
+   text-align:center;
+}
+.thirdFixedTable .borderRightColorNone tr:last-child th {
+    border-bottom: 1px solid #ecf0f5;
+}
+.thirdFixedTable .rowHover div,
+.thirdFixedTable .rowHover th,
+.thirdFixedTable .rowHover td {
+    background: #fff;
+}
+.thirdFixedTable .wordRestrict {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.thirdFixedTable .fixed-table_fixed-left .topAndBottom_0 {
+    padding-top:0;
+    padding-bottom:0;
+}
+.thirdFixedTable .fixed-table_fixed-left td{
+    line-height:1.5;
+}
+.thirdFixedTable .fixed-table-box > .fixed-table_body-wraper {
+    max-height: 259px;
+}
+.thirdFixedTable .fixed-table_fixed > .fixed-table_body-wraper {
+    max-height: 250px;
+}

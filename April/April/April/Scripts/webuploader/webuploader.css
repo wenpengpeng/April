@@ -1,0 +1,216 @@
+﻿/*=====================以下部分是WebUploader必须的====================*/
+.webuploader-container {
+    position: relative;
+}
+
+.webuploader-element-invisible {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px,1px,1px,1px);
+}
+
+.webuploader-pick {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background: #00b7ee;
+    width:70px;
+    height:35px;
+    line-height:35px;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.webuploader-pick-hover {
+    background: #00a2d4;
+}
+
+.webuploader-pick-disable {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/*=====================以上部分是WebUploader必须的====================*/
+
+/*上传样式*/
+.upload-box {
+    position: relative;
+    display: block;
+    vertical-align: middle;
+    zoom: 1;
+    *display: inline;
+}
+
+.upload-box .upload-btn {
+    display: inline-block;
+    height: 32px;
+    zoom: 1;
+    *display: inline;
+}
+
+.upload-box .upload-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2px 5px;
+    width: 115px;
+    height: 35px;
+    border: 1px solid #d7d7d7;
+    background: #fff;
+    overflow: hidden;
+}
+
+.upload-box .upload-progress .txt {
+    display: block;
+    padding-right: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 11px;
+    color: gray;
+    line-height: 18px;
+    height: 18px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.upload-box .upload-progress .bar {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 4px;
+    border: 1px solid #f5f5f5;
+}
+
+.upload-box .upload-progress .bar b {
+    display: block;
+    width: 0%;
+    height: 4px;
+    font-weight: normal;
+    text-indent: -99em;
+    background: #28B779;
+    overflow: hidden;
+}
+
+.upload-box .upload-progress .close {
+    position: absolute;
+    display: block;
+    top: 1px;
+    right: 1px;
+    width: 14px;
+    height: 14px;
+    text-indent: -99em;
+    background: url(skin_icons.png) -56px -196px no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/*单文件上传*/
+
+uploader-list {
+    width: 100%;
+    overflow: hidden;
+}
+
+.file-item {
+    float: left;
+    position: relative;
+    margin: 0 20px 20px 0;
+    padding: 4px;
+}
+
+.uploader-list .thumbnail {
+    width: 110px;
+    height: 110px;
+}
+
+.file-item .info {
+    position: absolute;
+    left: 4px;
+    bottom: 4px;
+    right: 4px;
+    height: 20px;
+    line-height: 20px;
+    text-indent: 5px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    z-index: 10;
+}
+
+/*图片相册样式*/
+.photo-list {
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+
+.photo-list ul {
+    margin: 0 0 0 -15px;
+}
+
+.photo-list ul li {
+    float: left;
+    margin-left: 15px;
+    text-align: center;
+    *width: 118px;
+}
+
+.photo-list ul li .img-box {
+    position: relative;
+    margin: 5px auto;
+    width: 112px;
+    height: 112px;
+    border: 3px #efefed solid;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.photo-list ul li .img-box.selected {
+    border: 3px #f60 solid;
+}
+
+.photo-list ul li .img-box img {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.photo-list ul li .img-box .remark {
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 3px 2px;
+    height: 18px;
+    line-height: 18px;
+    background: #000;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+    text-align: left;
+    overflow: hidden;
+}
+
+.photo-list ul li .img-box .remark:hover {
+    top: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+.photo-list ul li .img-box .remark i {
+    position: relative;
+    font-size: 12px;
+    color: #fff;
+    font-style: normal;
+    line-height: 18px;
+}
+
+.photo-list ul li a {
+    padding-right: 1em;
+}

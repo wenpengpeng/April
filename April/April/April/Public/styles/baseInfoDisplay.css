@@ -1,0 +1,93 @@
+﻿ /*基本信息展示*/
+    .second_bascial_info , .baseInfo_ul{
+        width:100%;
+        display:inline-block;
+    }
+    .second_bascial_info .set_small_width > p{
+        margin-bottom:13px;
+    }
+    .baseInfo_ul li {
+        width: 33%;
+        list-style: none;
+        float: left;
+        padding-right:10px;
+    }
+    .baseInfo_ul li .basical_title{
+        vertical-align:top;
+    }
+    .baseInfo_ul li .basical_content_4{
+        width:78%;
+        display:inline-block;
+        word-break:break-all;
+    }
+    .baseInfo_ul li .basical_content_6{
+        width:70%;
+        display:inline-block;
+        word-break:break-all;
+    }
+    .baseInfo_ul li .basical_content_9{
+        width:58%;
+        display:inline-block;
+        word-break:break-all;
+    }
+    .baseInfo_ul li .basical_content_11{
+        width:50%;
+        display:inline-block;
+        word-break:break-all;
+    }
+    .baseInfo_ul li .basical_content_13{
+        /*background:#ccc;*/
+        width:43%;
+        display:inline-block;
+        word-break:break-all;
+    }
+    .baseInfo_ul li .basical_content_5{
+        width:74%;
+        display:inline-block;
+        word-break:break-all;
+    }
+    .baseInfo_ul li .basical_content_7{
+        width:66%;
+        display:inline-block;
+        word-break:break-all;
+    }
+    /*备注*/
+    .second_remarks{
+        margin-bottom:10px;
+    }
+    .second_remarks .remark_title {
+        vertical-align: top;
+    }
+    .second_remarks .remark_content {
+        display: inline-block;
+        word-break: break-all;
+        width: 90%;
+        /*background: #ccc;*/
+        /*line-height:25px;*/
+    }
+    .second_remarks .remark_content p{
+        margin-bottom:5px;
+        line-height:1.35;
+    }
+
+
+    /*商务技术条款*/
+    .business_technology .clause_name{
+        vertical-align: top;
+    }
+    .business_technology .clause_content {
+        display: inline-block;
+        word-break: break-all;
+        width: 93%;
+        /*background: #ccc;*/
+    }
+    .business_technology .clause_content p{
+        margin-bottom:0;
+    }
+
+    /*单个扩展长度*/
+      .extend_width{
+        width:110%;
+        margin-bottom:0;
+    }
+

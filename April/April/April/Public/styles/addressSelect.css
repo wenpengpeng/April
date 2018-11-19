@@ -1,0 +1,62 @@
+/*插件的地址选择样式修改*/
+.addressSelect #stock_city_item{
+    clear:both;
+}
+.addressSelect #store-selector .text {
+    border: 1px solid #e5e5e5;
+}
+.addressSelect #store-selector .content {
+    box-shadow: none;
+    border: 1px solid #e5e5e5;
+    padding:15px 15px 5px 10px;
+}
+.addressSelect #JD-stock .tab .curr {
+    border: 2px solid #0583dd;
+    border-bottom:0;
+}
+.addressSelect #JD-stock .tab .curr {
+    height: 28px;
+}
+.addressSelect #JD-stock .tab {
+    height: 28px;
+    border-bottom: 2px solid #0583dd;
+}
+.addressSelect #JD-stock .tab li {
+    height: 26px;
+    margin-right:14px;
+}
+.addressSelect #JD-stock .tab a{
+    line-height:26px;
+}
+.addressSelect #JD-stock .area-list li {
+    padding: 2px 15px 2px 0;
+}
+.addressSelect #JD-stock .area-list {
+    padding-top: 10px;
+    display: inline-block;
+    width: 100%;
+}
+.addressSelect #JD-stock .tab a i {
+    top: 11px;
+}
+.addressSelect #store-selector .content {
+    top: 22px;
+    left: 0; 
+}
+.addressSelect #store-selector .close {
+    top: 34px;
+    left: 360px;
+}
+.addressSelect #store-selector .text {
+    padding: 0px 20px 0 10px;
+}
+.addressSelect #JD-stock .area-list li a{
+    color:#666;
+    padding:2px 2px;
+    text-decoration:none;
+    line-height:1.4;
+}
+.addressSelect #JD-stock .area-list li a:hover, .addressSelect #JD-stock .area-list li a.selected {
+    background: #0583dd;
+    color:#fff;
+}

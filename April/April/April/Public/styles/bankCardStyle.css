@@ -1,0 +1,46 @@
+﻿.bank_card_size {
+    margin:0;
+    display:inline-block;
+}
+.bank_card_size li{
+    float:left;
+    margin-right:30px;
+    margin-bottom:10px;
+}
+.bank_card_size .a_bank_card{
+    width:374px;
+    height:213px;
+    border-radius:5px;
+    padding:20px;
+    box-sizing:border-box;
+}
+.bank_card_size .a_bank_card{
+    position:relative;
+}
+.bank_default{
+    position:absolute;
+    right:0;
+    top:0;
+}
+.a_bank_card > p {
+    margin-top: 15px;
+}
+.a_bank_card > div{
+    color: #fff;
+    font-size: 24px;
+}
+.bank_card_size .bank_address{
+    font-size:18px;
+}
+.bank_card_size .bg_57a9f8{
+    border:1px solid #57a9f8;
+}
+.bank_card_size .bg_57a9f8 >p {
+    color: #a4d2ff;
+}
+.bank_card_size .bg_009b4c{
+    border:1px solid #009b4c;
+}
+.bank_card_size .bg_009b4c >p {
+    color: #4fdc94;
+}

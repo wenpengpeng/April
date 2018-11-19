@@ -1,0 +1,38 @@
+﻿select{
+    color:#888;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+.publicContainerFormSelected>.form-group{
+    width: auto;
+    display: inline-block;
+}
+
+.publicContainerFormSelected>.form-group>.publicContainerFormSelectedLabel{
+    width: auto;
+    display: inline-block;
+    text-align: right;
+    height: 45px;
+    vertical-align: top;
+    line-height: 45px;
+    font-weight:500;
+}
+
+.publicContainerFormSelected>.form-group>.publicContainerFormSelectedSele{
+    width: 120px;
+    display: inline-block;
+    height: 45px;
+    margin-left: 15px;
+    color:#888;
+}
+
+.publicContainerFormSelected>.form-group>.publicContainerFormSelectedSele>option{
+    color:#888;
+}
+
+label{
+    margin-bottom:0px;
+}

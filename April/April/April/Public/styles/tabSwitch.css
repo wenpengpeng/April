@@ -1,0 +1,65 @@
+﻿
+/*第一种tab样式修改*/
+.first_tab_style_modify .nav-tabs-custom>.nav-tabs{
+    padding-bottom:2px;
+}
+.first_tab_style_modify .nav-tabs-custom > .nav-tabs > li {
+    border-top: none;
+}
+.first_tab_style_modify .nav-tabs-custom>.nav-tabs>li>a{
+    background:#ccc;
+    color:#666;
+}
+.first_tab_style_modify .nav-tabs-custom > .nav-tabs > li.active > a, .first_tab_style_modify .nav-tabs-custom > .nav-tabs > li.active:hover > a {
+    background-color: #44a5ef;
+    color: #fff;
+}
+.first_tab_style_modify .nav-tabs-custom > .nav-tabs > li {
+    margin-right: 15px;
+}
+
+/*tab内字数限制*/
+.first_tab_word_restrict .nav-tabs-custom > .nav-tabs > li > a {
+    width: 90px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*授标说明tab切换*/
+.award_head {
+    line-height: 75px;
+    margin-top:-20px;
+}
+
+.first_award_info {
+    margin-right: 65px;
+}
+
+.set_award_width {
+    width: 1064px;
+}
+
+.award_textarea {
+    min-height: 160px;
+    resize: none;
+}
+
+
+/*保证金*/
+.orange_tips{
+    margin-top:18px;
+    border:1px solid #edd28b;
+    padding:15px 20px 0;
+    background:#fcf8e3;
+}
+.orange_tips p{
+    margin-bottom:15px;
+    color:#ff7700;
+}
+.client_link_seller {
+    margin: 15px 0 28px 20px;
+    color: #ff7700;
+
+}

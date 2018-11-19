@@ -1,0 +1,45 @@
+﻿.beautifyCheckboxParent{
+    cursor: pointer;
+}
+.beautifyCheckbox {
+    display: none;
+}
+.beautifyCheckboxParent .beautifyCheckboxBrother {
+    font-style: normal;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+    vertical-align: middle;
+    color: #fff;
+    outline:1px solid #cacaca;
+    overflow:hidden;
+    position:relative;
+}
+.beautifyCheckboxParent .beautifyCheckboxBrother:before{
+    position:absolute;
+    left:-2px;
+    font-size:20px;
+}
+.beautifyCheckbox:checked + .beautifyCheckboxBrother{
+    color:#3b98f7;
+    border-color:#3b98f7;
+}
+.beautifyCheckbox:disabled + .beautifyCheckboxBrother{
+    color:#cacaca;
+}
+.beautifyCheckbox:checked:disabled + .beautifyCheckboxBrother {
+    color: #cacaca;
+}
+
+
+@*公共checkbox美化*@ 
+/*<link href="~/Public/styles/iconfontCheckbox.css" rel="stylesheet"/> 
+<link href="~/Public/styles/beautifyCheckbox.css" rel="stylesheet"*/
+
+@*html*@ 
+/*<label class="beautifyCheckboxParent" >
+    <input type="checkbox" class="beautifyCheckbox" / > 
+    <i class="iconfont beautifyCheckboxBrother icon-checkbox-checked" > </i > 
+</label >*/

@@ -1,0 +1,173 @@
+﻿.table {
+    table-layout: auto;
+    word-break: break-word;
+}
+.width_40px {
+    width: 40px;
+}
+.width_50px {
+    width: 50px;
+}
+.width_60px {
+    width: 60px;
+}
+.width_70px{
+    width:70px;
+}
+.width_80px {
+    width: 80px;
+}
+.width_82px {
+    width: 82px;
+}
+.width_90px {
+    width: 90px;
+}
+.width_100px {
+    width: 100px;
+}
+.width_107px {
+    width: 107px;
+}
+.width_110px {
+    width: 110px;
+}
+.width_120px{
+    width:120px;
+}
+.width_130px {
+    width: 130px;
+}
+.width_140px {
+    width: 140px;
+}
+.width_150px {
+    width: 150px;
+}
+.width_170px {
+    width: 170px;
+}
+.width_180px {
+    width: 180px;
+}
+.width_190px{
+    width:190px;
+}
+.width_200px{
+    width:200px;
+}
+.width_480px{
+    width:480px;
+}
+.width_540px {
+    width: 540px;
+}
+/**
+    操作 css
+**/
+.indexTableThWidth142px {
+    /*outline: 1px solid red;*/
+    text-align: right !important;
+    width: 152px !important;
+    display: inline-block;
+    line-height: 50px !important;
+    padding-right: 15px !important;
+}
+.indexTableTd0 {
+    /*outline: 1px solid red;*/
+    text-align: right !important;
+    width:152px !important;
+    padding-right:10px !important;
+}
+.indexTableTd0>span , .indexTableTd0 div>span{
+    width: 58px;
+    /*outline: 1px solid red;*/
+    display: inline-block;
+    margin-right: 5px;
+    text-align:right;
+}
+.indexTableTd0>span:nth-child(even) , .indexTableTd0 div>span:nth-child(even){
+    margin-right:5px;
+}
+/*
+    PP : 英文percent point的简称，意思为百分比。
+    PCT : 英文percentage的缩写，意思为百分率。 -- pct
+*/
+.width_pct_5 {
+    width: 5%;
+}
+.width_pct_6 {
+    width: 6% ;
+}
+.width_pct_7 {
+    width: 7%;
+}
+.width_pct_8 {
+    width: 8%;
+}
+.width_pct_9 {
+    width: 9%;
+}
+.width_pct_10{
+    width:10%;
+}
+.width_pct_11 {
+    width: 11%;
+}
+.width_pct_12 {
+    width: 12%;
+}
+.width_pct_13 {
+    width: 13%;
+}
+.width_pct_14 {
+    width: 14%;
+}
+.width_pct_15 {
+    width: 15%;
+}
+.width_pct_17 {
+    width: 17%;
+}
+.width_pct_19 {
+    width: 19%;
+}
+.width_pct_20{
+    width:20%;
+}
+.width_pct_27 {
+    width: 27%;
+}
+.width_pct_30 {
+    width: 30%;
+}
+.width_pct_38 {
+    width: 38%;
+}
+.width_pct_40 {
+    width: 40%;
+}
+.width_pct_50 {
+    width: 50%;
+}
+.width_pct_70 {
+    width: 70%;
+}
+.width_pct_80 {
+    width: 80%;
+}
+.width_pct_85 {
+    width: 85%;
+}
+.width_pct_92 {
+    width: 92%;
+}
+.width_pct_100{
+    width:100%;
+}
+.width_pct_240 {
+    width:240%;
+}
+.width_pct_230 {
+    width: 230%;
+}

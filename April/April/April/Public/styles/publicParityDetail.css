@@ -1,0 +1,75 @@
+﻿.parity_detail_content {
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background: #fff;
+    padding:16px 22px 16px 17px;
+}
+
+.parity_head {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.parity_head .content_left {
+    width: 1000px;
+}
+
+.parity_head .btn-danger {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    margin-left:0;
+    width:126px;
+
+}
+
+/*左*/
+.parity_require{
+    width:700px;
+}
+.parity_require h5{
+    margin-bottom:20px;
+}
+.parity_require li {
+    margin-bottom: 16px;
+}
+
+/*右*/
+.buyer_info {
+    width: 394px;
+    min-height: 256px;
+    padding: 5px;
+    padding-top:0;
+    position: absolute;
+    right: 0px;
+    top:12px;
+    background: #00a2f1;
+}
+.buyer_info_title{
+    padding-left:15px;
+    line-height:48px;
+    color:#fff;
+}
+.buyer_info_content{
+    padding:15px;
+    background:#fff;
+    margin:0;
+}
+.buyer_info_content li{
+    margin-bottom:16px;
+}
+.buyer_info_content li:last-child{
+    margin-bottom:0;
+}
+.address_bind{
+    display:inline-block;
+    width:284px;
+}
+.marginTop_40 .btn-primary {
+    width: 170px;
+}
+.portalPublic_container .btn{
+    border-radius:3px;
+}

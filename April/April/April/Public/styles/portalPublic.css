@@ -1,0 +1,640 @@
+﻿/*other*/
+.font_weight {
+    font-weight: bold;
+}
+.add_border{
+    border:1px solid #ddd;
+    box-sizing:border-box;
+}
+.overflow_hidden{
+    overflow:hidden;
+}
+
+.add_btn_padding{
+    padding: 11px 0;
+}
+
+/*背景颜色*/
+.bg_fff {
+    background: #fff !important;
+}
+.bg_079ce5 {
+    background: #079ce5;
+}
+
+/*颜色*/
+.color_079ce5 {
+    color: #079ce5;
+}
+.color_333{
+    color:#333;
+}
+/*块级区分*/
+.block {
+    display: block;
+}
+.inline_block {
+    display: inline-block;
+}
+
+/*间距*/
+.padding_0 {
+    padding: 0;
+}
+.padding_16 {
+    padding: 16px;
+}
+.paddingTop_20 {
+    padding-top: 20px;
+}
+.paddingBottom_100{
+    padding-bottom:100px;
+}
+.marginTop_25 {
+    margin-top: 25px;
+}
+.marginTop_40 {
+    margin-top: 40px;
+}
+.marginRight_50 {
+    margin-right: 50px;
+}
+.marginLeft_0 {
+    margin-left: 0;
+}
+
+
+
+/*浮动*/
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
+}
+
+
+/*流体定位*/
+.po_relative {
+    position: relative;
+}
+
+.po_absolute {
+    position: absolute;
+}
+
+.po_fixed {
+    position: fixed;
+}
+
+
+/*字符裁剪*/
+.text_cutting {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/*文字左右方向*/
+.text_align_left {
+    text-align: left !important;
+}
+
+.text_align_center {
+    text-align: center !important;
+}
+
+.text_align_right {
+    text-align: right !important;
+}
+
+.justufy_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*标签上下方向*/
+.vertical_middle{
+    vertical-align:middle;
+}
+.vertical_top {
+    vertical-align: top;
+}
+.vertical_text_top{
+    vertical-align:text-top;
+}
+.vertical_text_bottom {
+    vertical-align: text-bottom;
+}
+
+
+
+/*面包屑*/
+.breadcrumb {
+    padding:0;
+    margin-bottom: 0; 
+    background-color: transparent;
+    line-height:60px;
+}
+.breadcrumb>li a{
+    color:#999;
+}
+.breadcrumb>li:first-child a{
+    color:#666;
+}
+.breadcrumb>li+li:before {
+    color: #999;
+    content: ">";
+    font-weight:bold;
+}
+
+
+
+
+
+/*layout 头部强制没有bottom */
+.for_changeTab{
+    margin-bottom:0 !important;
+}
+/*新页面内容*/
+.portalPublic0{
+    width:100%;
+    background:#f0f0f0;
+}
+.portalPublic0_nav0{
+    width:1180px;
+    margin:0 auto;
+    height:60px;
+}
+.portalPublic_container{
+    width:1180px;
+    margin: 0 auto;
+}
+.portalPublic_container_left0{
+    width:800px;
+    padding:0 20px 20px 20px;
+    border:1px solid #ddd;
+    margin-right:20px;
+    background:#fff;
+    display:inline-block;
+    margin-bottom:60px;
+}
+.portalPublic_container_right0{
+    width:355px;
+    padding:0 0 20px 0;
+    border:1px solid #ddd;
+    background:#fff;
+    display:inline-block;
+    vertical-align:top;
+    margin-bottom:60px;
+}
+
+/*基本信息展示部分*/
+.second_public_title {
+    font-size: 16px;
+    font-weight: bold;
+    height: 55px;
+    border-bottom: 1px solid #ddd;
+    line-height: 50px;
+    color: #444;
+    margin-bottom:15px;
+}
+.second_title2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin:0;
+    margin-bottom:20px;
+}
+.second_bascial_info , .baseInfo_ul{
+    width:100%;
+    display:inline-block;
+}
+.baseInfo_ul li {
+    list-style: none;
+    float: left;
+    padding-right:10px;
+}
+.baseInfo_ul li .basical_title{
+    vertical-align:top;
+}
+.baseInfo_ul li .basical_content_4{
+    width:63%;
+    display:inline-block;
+    word-break:break-all;
+    color:#444;
+}
+.baseInfo_ul li .basical_content_6{
+    width:56%;
+    display:inline-block;
+    word-break:break-all;
+    color:#444;
+}
+.baseInfo_ul_list0{
+    width:40%;
+}
+.baseInfo_ul_list1{
+    width:28%;
+}
+.baseInfo_ul_list2{
+    width:32%;
+}
+/*备注*/
+.second_remarks{
+    margin-top:15px;
+}
+.second_remarks .remark_title {
+    vertical-align: top;
+}
+.second_remarks .remark_content {
+    display: inline-block;
+    word-break: break-all;
+    width: 86%;
+    color:#444;
+}
+.second_remarks .remark_content p{
+    margin-bottom:5px;
+}
+/*虚线*/
+.portalPublic_deco0{
+    border:1px dashed #ddd;
+    margin-bottom:15px;
+}
+/*强制不换行*/
+.portalPublic_space0{
+    white-space:nowrap;
+}
+/*颜色*/
+.color_44a5ef {
+    color: #44a5ef;
+}
+.color_44a5ef:hover{
+    color: #44a5ef;
+    cursor:pointer;
+}
+.red_required {
+    color: red !important;
+}
+.color_444{
+    color:#444;
+}
+
+
+/*物料信息部分*/
+.portalPublic_content0{
+    width:100%;
+}
+.portalPublic_content0_titile0{
+    height:40px;
+    background:#00a2f1;
+    line-height:40px;
+    color:#fff;
+    padding-left:20px;
+    font-size:16px;
+    border-radius:3px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.portalPublic_content0_span0{
+    padding-right:10px;
+}
+.portalPublic_content0_titile1 {
+    width: 100%;
+    min-height: 115px;
+    border: 1px solid #e3e3e3;
+    border-top: transparent;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 20px 20px 10px 20px;
+    font-size:13px;
+    margin-bottom:20px;
+}
+.portalPublic_content0_titile1>ul>li{
+    width:175px;
+    display:inline-block;
+}
+.portalPublic_content0_titile1>ul>li>.portalPublic_content0_titile1_span0{
+    display:inline-block;
+    width:auto;
+    vertical-align:top;
+}
+.portalPublic_content0_titile1>ul>li>.portalPublic_content0_titile1_div0{
+    display:inline-block;
+    width:55%;
+    word-break:break-all;
+    color:#444;
+}
+.portalPublic_content0_list0{
+    width:100% !important;
+}
+.portalPublic_content0_titile1_span1{
+    /*width:10% !important;*/
+    width:auto !important;
+}
+.portalPublic_content0_titile1_div1{
+    width:88% !important;
+}
+
+
+/*竞价单协议与备注部分*/
+.secondPublic_xy0{
+    margin-bottom:25px;
+}
+.secondPublic_xy0>p{
+   margin:0;
+   line-height:30px;
+   color:#666;
+}
+.secondPublic_color0{
+    color:#444 !important;
+}
+
+
+/*商务与技术条款部分*/
+.business_technology{
+    margin-bottom:15px;
+}
+.business_technology .clause_name{
+        vertical-align: top;
+}
+.business_technology .clause_content {
+    display: inline-block;
+    word-break: break-all;
+    width: 90%;
+}
+.business_technology .clause_content p{
+    margin-bottom:0;
+}
+
+
+/*报名信息部分*/
+.portalPublic_container_right0_input0 {
+    margin: 0 auto;
+    padding: 0 20px 5px 20px;
+    position: relative;
+}
+.portalPublic_container_right0_input0_span0{
+    padding-bottom:8px;
+    display:inline-block;
+}
+.portalPublic_container_right0_input1{
+    height:40px;
+}
+.portalPublic_container_right0_btn0{
+    width:80px;
+    height:40px;
+    color:#fff;
+    font-size:12px;
+    position:absolute;
+    right: 20px;
+    top: 27px;
+    background: #00a2f1;
+    border: transparent;
+}
+.portalPublic_container_right0_btn1{
+    padding: 8px 50px;
+    background: #ff5959 !important;
+    border-radius: 3px !important;
+    margin-right: 37px;
+    font-size: 16px !important;
+    border:1px solid #ff5959 !important;
+}
+.portalPublic_container_right0_btn2 {
+    padding: 8px 35px;
+    background: #fff !important;
+    border-radius: 3px !important;
+    border: 1px solid #b1b1b1 !important;
+    color: #b1b1b1 !important;
+    font-size: 16px !important;
+}
+.portalPublic_container_right0_input0 .btn-default:hover,
+.portalPublic_container_right0_input0 .btn-default:focus {
+    background: #fff !important;
+}
+
+/*提示信息部分*/
+.portalPublic_container_right0_img0{
+    margin-left:21%;
+    margin-top:60px;
+}
+.portalPublic_container_right0_p0 {
+    width: 230px;
+    margin: 0 auto;
+    margin-top: 35px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    color: #444;
+}
+.portalPublic_container_right0_btn3 {
+    margin-left: 35%;
+    margin-top: 40px;
+    margin-bottom:20px;
+}
+
+/*倒计时模块*/
+.times0 {
+    display: inline-block;
+    padding: 0 4px;
+    font-size: 19px;
+    text-align: center;
+    line-height: 35px;
+    background: #ff5a00;
+    color: #fff;
+    border-radius: 4px;
+    margin-right: 5px;
+    position: relative;
+    letter-spacing:1px;
+    margin-left:5px;
+}
+.times0:first-child{
+    margin-left:0;
+}
+.timespan{
+    padding-left:20px;
+}
+.portalPublic_deco1{
+    margin-top:22px;
+}
+.portalPublic_btn0{
+    width:285px;
+    margin:0 auto;
+    padding-top:10px;
+    padding-bottom:30px;
+}
+.portalPublic_btn0>.btn{
+    font-size: 16px;
+    border-radius: 4px;
+    width: 130px;
+    padding:10px 0;
+}
+.portalPublic_btn0_primary0 {
+    margin-left: 20px;
+}
+
+/*判断状态头部*/
+.second_public_title_w{
+   position: relative;
+}
+.quoteReview_span0 {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    color: #44a5ef;
+    cursor: pointer;
+}
+/*审核不通过表格*/
+.business_tr_font > th {
+    color: #444;
+    vertical-align: middle !important;
+    width: 7%;
+    text-align:center;
+}
+.business_tr_font > td {
+    color: #666;
+    vertical-align: middle !important;
+    text-align:center;
+}
+.business_th_x {
+    width: 1% !important;
+}
+.business_th_w {
+    width: 13% !important;
+}
+.business_th_s{
+    width:3% !important;
+}
+textarea.form-control {
+    resize: none;
+}
+.business_th_x0{
+    width:4% !important;
+}
+
+.business_th_j0{
+    width:11% !important;
+}
+.portalPublic_td0{
+    width:110px;
+    border:1px solid #ddd;
+}
+.business_word_wrap {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+
+/*提示  */
+.tips {
+    line-height: 50px;
+    border: 1px solid #edd28b;
+    background: #fcf8e3;
+    color: #ff7700;
+}
+.tips .glyphicon {
+    padding: 0 15px 0 17px;
+}
+.btn-danger {
+    border-radius: 3px;
+    margin-left: 25px;
+}
+
+a{
+    cursor:pointer;
+}
+/*
+    查询无结果显示
+*/
+.BidList_searchData0{
+    margin:0 auto;
+    width:400px;
+    height:auto;
+    padding-top:114px;
+    text-align:center;
+    height:935px;
+}
+.BidList_searchData0>img{
+    margin:0 0 22px 0;
+}
+.BidList_searchData0_p0{
+    font-size:16px;
+}
+
+/*V1.1.1优化新增公开竞价/综合竞价页面表格css*/
+.portalPublic0_table0 > thead > tr > th {
+    height: 50px !important;
+    background: #00a2f1;
+    color: #fff;
+    border: 1px solid #ddd !important;
+}
+.portalPublic0_table0 > tbody > tr > td{
+    border:1px solid #ddd !important;
+    color:#666;
+    height:50px !important;
+}
+
+.portalPublic0_table1 > tbody > tr:nth-child(2n) {
+    background: #f9f9f9;
+}
+.business_td_2{
+    width:96px;
+    display:inline-block;
+}
+
+.business_td_b0{
+    padding:1px 4px;
+    color:#888;
+    font-size:12px;
+    vertical-align:top;
+    display:inline-block;
+    margin-top:1px;
+    border:1px solid #ddd;
+}
+.bidPublic_look0{
+    background:#fff !important;
+}
+.portalPublic_padding_bottom10{
+    padding-bottom:15px;
+}
+
+/*无border表格*/
+.portalPublic0_no_table {
+    border: 1px solid #ddd !important;
+}
+.portalPublic0_no_table > thead > tr > th {
+    height: 50px !important;
+    background: #00a2f1;
+    color: #fff;
+    text-align:center;
+    vertical-align:middle;
+    border-bottom:1px solid transparent;
+}
+.portalPublic0_no_table > tbody > tr > td {
+    color: #666;
+    height: 50px !important;
+    text-align:center;
+    vertical-align:middle;
+}
+.max_width_175px {
+    max-width: 180px;
+    display:inline-block;
+}
+.portalPublic0_no_table .business_td_b0 {
+    margin-left: 5px;
+}
+.portalPublic0_no_table > tbody > tr:nth-child(2n-1) {
+    background: #fff;
+}
+.width_10 {
+    width: 10%;
+}
+.width_20{
+    width:20%;
+}
+.bidDetailVertical0 > thead > tr > th,
+.bidDetailVertical0 > tbody > tr > td{
+    vertical-align:middle;
+}
+
+

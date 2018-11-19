@@ -1,0 +1,35 @@
+﻿/*报价附件*/
+/*固定宽度*/
+.set_small_width {
+    width: 1084px;
+}
+.quotationAttachment_f0{
+    width:266px;
+    display:inline-block;
+    padding-bottom:10px;
+}
+.quotationAttachment_f0_span0{
+    display: inline-block;
+    width: auto;
+    vertical-align: top;
+    padding-right: 6px;
+}
+.quotationAttachment_f0_span1{
+    display:inline-block;
+    width:auto;
+}
+.quotationAttachment_f0_span2{
+    color:#888;
+}
+.quotationAttachment_f0_a0 {
+    color: #44a5ef;
+    cursor:pointer;
+}
+.quotationAttachment_f0_overflow {
+    width:200px;
+    display:inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    white-space: nowrap;
+}

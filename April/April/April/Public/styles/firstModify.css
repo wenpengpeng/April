@@ -1,0 +1,153 @@
+﻿.box{
+    border-top:none;
+    box-shadow:none;
+}
+.tab-content {
+    background: #ecf0f5;
+}
+.content{
+   padding-left:13px;
+   padding-right:13px;
+}
+.box-body {
+    padding:12px;
+}
+.layout_footer0 {
+    background: #ecf0f5;
+    height: 50px;
+    line-height: 60px;
+    padding-left: 16px;
+    color: #8a8a8a;
+    border-top:1px solid #e2e2e2;
+}
+.nav-tabs-custom{
+    box-shadow:none;
+}
+.firstModify_right_link0{
+    position:relative;
+}
+.firstModify_a0 {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    color: #44a5ef !important;
+}
+.firstModify_modal_deco0 {
+    border-top-color: transparent;
+}
+.color_999{
+    color:#999 !important;
+}
+.color_rgb196{
+    color:rgb(196,163,121);
+}
+a {
+    color: #44a5ef;
+}
+.firstModify_span0{
+    padding-right:10px;
+}
+.firstModify_width0{
+    width:1084px !important;
+}
+.firstModify_box_info0 {
+    padding: 0 15px;
+}
+.firstModify_mailbox_controls{
+    display:-webkit-box;
+    padding:0;
+    /*outline:1px solid red;*/
+}
+.firstModify_padding_left0{
+    padding-left:0;
+}
+.firstModify_table0 {
+    padding:0;
+    border:none;
+}
+.firstModify_select0{
+    width:118px;
+}
+.firstModify_select1{
+    width:150px;
+}
+.firstModify_margin_left15{
+    margin-left:15px;
+}
+.firstModify_margin_left0{
+    margin-left:0;
+}
+.firstModify_margin_left30{
+    margin-left:-30px;
+}
+.compreHensive_margin_right16{
+    margin-right:16px;
+}
+.compreHensive_vertical0{
+    vertical-align:text-top;
+}
+.compreHensive_col_3 {
+    padding-top: 5px;
+    height: 55px;
+    margin-left:-47px;
+}
+.compreHensive_col_4 {
+    margin-left: -17%;
+    padding-top: 11px;
+}
+.firstModify_radio0{
+    margin-bottom:15px;
+}
+.firstModify_checkbox0{
+    margin-left:28px;
+}
+.firstModify_label0 {
+    overflow:hidden;
+    text-overflow:ellipsis;
+    width:280px;
+    border: 1px solid #00a2f1;
+    line-height: 32px;
+    padding: 5px 22px;
+    margin-right: 20px !important;
+    margin-bottom: 7px !important;
+    color: #00a2f1;
+}
+.firstModify_label0:hover{
+    background: #00a2f1;
+    color:#fff;
+}
+.firstModify_label0_back0 {
+    background: #00a2f1!important;
+    color:#fff!important;
+}
+.firstModify_form_group0{
+    margin-bottom:0 !important;
+}
+.firstModify_form_group1{
+    margin-bottom:10px !important;
+}
+.edit_input0 {
+    height: auto !important;
+    padding: 0 !important;
+    text-align:center;
+}
+.edit_td0 {
+    width: auto !important;
+}
+.firstModify_margin_left_15{
+    margin-left:-15px;
+}
+
+/*新增 css*/
+.headerModalBody0{
+    padding:0 15px 15px 15px !important;
+}
+.headerBoxBody{
+    padding:0 10px 10px 10px !important;
+}
+.headerModalHeader0{
+    padding-left:38px;
+}
+.headerModalTitle0{
+    font-size:20px;
+}

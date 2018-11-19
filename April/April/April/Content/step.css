@@ -1,0 +1,60 @@
+/*步骤样式*/
+.icon-progressbar-default {
+    background-position: 0 -55px;
+}
+
+.armyMedalStep {
+    padding:0 0 0 10px;
+    margin: 0 auto;
+    width:900px;
+}
+
+.armyMedalStep li {
+    background-image: url('../Images/step/step.png');
+    position: relative;
+    float: left;
+    width: 140px;
+    height: 50px;
+    list-style: none;
+    margin-left: -10px;
+}
+.armyMedalStep li.default {
+    background-position: 0 -55px;
+}
+.armyMedalStep li.activate {
+    background-position: 0 -3px;
+}
+.armyMedalStep li.last-default {
+    width: 55px;
+    background-position: -155px -106px;
+}
+.armyMedalStep li.last-activate {
+    width: 55px;
+    background-position: -105px -106px;
+}
+
+/*步骤数字*/
+.armyMedalStep li > em {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 18px;
+    top: 13px;
+    left: 16px;
+    color: #FFFFFF;
+}
+.armyMedalStep .text {
+    position: absolute;
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    top: 50px;
+    left: -24px;
+    font-weight: bold;
+    color: gray !important;
+}

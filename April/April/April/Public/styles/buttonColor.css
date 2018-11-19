@@ -1,0 +1,82 @@
+﻿/*取消boostrap自带边框*/
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+    outline: none;
+    border-color: transparent;
+}
+
+/*button颜色修改*/
+.btn-primary{
+    background: #44a5ef !important;
+    border-color:transparent !important;
+}
+.btn-primary:hover{
+    background:#3c8dbc;
+    border-color:transparent;
+}
+.btn-warning {
+    background-color: #ff722c;
+    border-color: transparent;
+}
+.btn-blue {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+.btn-blue:hover{
+    color: #fff;
+    background-color: #00a65a;
+    border-color: #008d4c;
+}
+.btn-gray{
+    background:#fff;
+    border:#d3d3d3 1px solid !important;
+    color:#8a8a8a !important;
+}
+.btn-gray:focus{
+    border:#d3d3d3 1px solid !important;
+    box-shadow:none;
+}
+.btn-tender {
+    color: #fff;
+    background-color: #ff626c;
+    border-color: #ff626c;
+}
+.btn-tender:hover{
+   background-color:#d9534f;
+   border-color:#d9534f;
+}
+.btn_radius{
+    border-radius:3px;
+}
+/*操作下拉框修改*/
+.table  td.btn-group>.btn+.dropdown-toggle , .table  td .btn-group .btn-sm {
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+}
+.table>tbody>tr>td>.btn-group > .dropdown-menu {
+    right: 0 !important;
+    left:auto !important;
+}
+
+/*给页面拉下一点*/
+.content .mailbox-controls{
+    padding-top:12px;
+}
+
+
+
+/*底部按钮样式和间距*/
+.quoteReview_footer_btn0{
+    padding-top:40px;
+    padding-bottom:40px;
+}
+.quoteReview_footer_btn0>.btn{
+    margin-right:15px;
+}
+.quoteReview_footer_btn0>.btn:last-child{
+    margin-right:0;
+}
+.quoteReview_footer_btnf0 {
+    background: #fff;
+    border: 1px solid #ccc;
+}

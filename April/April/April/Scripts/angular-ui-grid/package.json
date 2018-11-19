@@ -1,0 +1,68 @@
+{
+  "_from": "angular-ui-grid",
+  "_id": "angular-ui-grid@4.2.2",
+  "_inBundle": false,
+  "_integrity": "sha1-aqIqfKO5sm/X/+etJIfAt+C/8z8=",
+  "_location": "/angular-ui-grid",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "angular-ui-grid",
+    "name": "angular-ui-grid",
+    "escapedName": "angular-ui-grid",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/angular-ui-grid/-/angular-ui-grid-4.2.2.tgz",
+  "_shasum": "6aa22a7ca3b9b26fd7ffe7ad2487c0b7e0bff33f",
+  "_spec": "angular-ui-grid",
+  "_where": "F:\\测试项目\\Angularjs4",
+  "bugs": {
+    "url": "https://github.com/angular-ui/ui-grid/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "angular": ">=1.4.0 1.6.x"
+  },
+  "deprecated": false,
+  "description": "A data grid for Angular",
+  "files": [
+    "less",
+    "ui-grid.css",
+    "ui-grid.eot",
+    "ui-grid.js",
+    "ui-grid.min.css",
+    "ui-grid.min.js",
+    "ui-grid.svg",
+    "ui-grid.ttf",
+    "ui-grid.woff"
+  ],
+  "homepage": "http://ui-grid.info",
+  "ignore": [],
+  "keywords": [
+    "angular",
+    "ng-grid",
+    "nggrid",
+    "grid",
+    "angularjs",
+    "slickgrid",
+    "kogrid",
+    "ui-grid",
+    "ui grid",
+    "data grid"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "angular-ui-grid",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular-ui/ui-grid.git"
+  },
+  "version": "4.2.2"
+}

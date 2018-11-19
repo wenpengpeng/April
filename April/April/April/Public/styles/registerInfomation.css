@@ -1,0 +1,46 @@
+﻿/*报名信息*/
+
+.registerInformation_con0{
+    padding-left:30px;
+}
+.registerInformation_foot_btn0 >.btn {
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+.publicBidCretae_content_s_btn {
+    background:#fff;
+    border:1px solid #ccc;
+}
+.registerInformation_textarea0{
+    height:120px !important;
+    resize:none;
+}
+.registerInformation_textarea{
+    height:120px;
+}
+.registerInformation_f0{
+    margin-top:20px;
+}
+.registerInformation_row0{
+    margin-bottom:5px;
+}
+.registerInformation_span0{
+    display:inline-block;
+    margin-top:7px;
+    color:#888;
+}
+.registerInformation_input0{
+    padding-left:0 !important;
+}
+.registerInformation_phone0{
+    position:relative;
+}
+.registerInformation_phoneM{
+    position:absolute;
+    right:0;
+    top:0;
+    height:40px;
+    border-radius:0;
+}
+

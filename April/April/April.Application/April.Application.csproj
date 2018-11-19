@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3402A32F-703A-4F57-B16F-3509E60DA2B9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>April.Application</RootNamespace>
+    <AssemblyName>April.Application</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=4.0.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.4.0.1\lib\net45\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Extras.DynamicProxy, Version=4.4.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.Extras.DynamicProxy.4.4.0\lib\net45\Autofac.Extras.DynamicProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.4.2.1\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build.Framework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AprilApplicationModule.cs" />
+    <Compile Include="AprilAppServiceBase.cs" />
+    <Compile Include="Authorizations\AppAuthorizeAttribute.cs" />
+    <Compile Include="Authorizations\ApplicationAuthorizeEnum.cs" />
+    <Compile Include="Authorizations\ApplicationServiceIntercept.cs" />
+    <Compile Include="Authorizations\AppMethodAuthorizeAttribute.cs" />
+    <Compile Include="Authorizations\AuthorizeInterceptorBase.cs" />
+    <Compile Include="Authorizations\AuthorizeInterceptorFactory.cs" />
+    <Compile Include="Authorizations\Entity\AppAuthorize.cs" />
+    <Compile Include="Authorizations\Entity\AppMethodAuthorize.cs" />
+    <Compile Include="Authorizations\Entity\BaseAction.cs" />
+    <Compile Include="Authorizations\LoginInterceptor.cs" />
+    <Compile Include="Authorizations\NoLoginOperationPermissionInterceptor.cs" />
+    <Compile Include="Authorizations\OperationPermissionInerceptor.cs" />
+    <Compile Include="Commons\BusinessHelper.cs" />
+    <Compile Include="Commons\NullableIdDto.cs" />
+    <Compile Include="Commons\PagedResultDto.cs" />
+    <Compile Include="Permissions\Authorizes\Dtos\AppAuthorizeDto.cs" />
+    <Compile Include="Permissions\Authorizes\Dtos\AppMethodAuthorizeDto.cs" />
+    <Compile Include="Permissions\Authorizes\Dtos\AuditDto.cs" />
+    <Compile Include="Permissions\Authorizes\Dtos\EditMenuAppAuthorizeDto.cs" />
+    <Compile Include="Permissions\Authorizes\Dtos\MenuAppAuthorizeDto.cs" />
+    <Compile Include="Permissions\Authorizes\IMenuAppAuthorizeAppService.cs" />
+    <Compile Include="Permissions\Managers\Dtos\CreateOrUpdateManagerInputDto.cs" />
+    <Compile Include="Permissions\Managers\Dtos\ManagerUserBaseDto.cs" />
+    <Compile Include="Permissions\Managers\Dtos\GetManagerListDto.cs" />
+    <Compile Include="Permissions\Managers\Dtos\GetManagerPagerInput.cs" />
+    <Compile Include="Permissions\Managers\IManagerAppService.cs" />
+    <Compile Include="Permissions\Managers\ManagerAppService.cs" />
+    <Compile Include="Permissions\Menus\Dtos\MenuEditDto.cs" />
+    <Compile Include="Permissions\Menus\Dtos\MenuListDto.cs" />
+    <Compile Include="Permissions\Menus\Dtos\MenuSelectDto.cs" />
+    <Compile Include="Permissions\Menus\Dtos\MenuTreeAuthorizeDto.cs" />
+    <Compile Include="Permissions\Menus\Dtos\MenuTreeDto.cs" />
+    <Compile Include="Permissions\Menus\Dtos\SideBarDto.cs" />
+    <Compile Include="Permissions\Menus\IMenuAppService.cs" />
+    <Compile Include="Permissions\Authorizes\MenuAppAuthorizeAppService.cs" />
+    <Compile Include="Permissions\Menus\MenuAppService.cs" />
+    <Compile Include="Permissions\Roles\Dtos\GetAllIncludeUserRole.cs" />
+    <Compile Include="Permissions\Roles\Dtos\GetRoleAuthorizationDto.cs" />
+    <Compile Include="Permissions\Roles\Dtos\GetRolesInput.cs" />
+    <Compile Include="Permissions\Roles\Dtos\RoleEditDto.cs" />
+    <Compile Include="Permissions\Roles\Dtos\RoleListDto.cs" />
+    <Compile Include="Permissions\Roles\Dtos\RoleSetMenuDto.cs" />
+    <Compile Include="Permissions\Roles\IRoleAppService.cs" />
+    <Compile Include="Permissions\Roles\RoleAppService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\April.Auditing\April.Web.csproj">
+      <Project>{D6787912-14A0-4B28-B483-2A160EDEADBF}</Project>
+      <Name>April.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\April.Common\April.Common.csproj">
+      <Project>{E715404E-620B-4100-B2B9-840E62759DEE}</Project>
+      <Name>April.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\April.Core\April.Core.csproj">
+      <Project>{CF22A84D-5D7D-48C5-92B7-33FADBD22DCA}</Project>
+      <Name>April.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\April.Uow\April.Uow.csproj">
+      <Project>{74C03A1F-ABA1-4800-9834-A5E3EBA095A7}</Project>
+      <Name>April.Uow</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain.Core\Domain.Core.csproj">
+      <Project>{5598BAD8-87C3-4398-BD42-0157300CA1BC}</Project>
+      <Name>Domain.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

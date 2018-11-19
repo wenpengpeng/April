@@ -1,0 +1,254 @@
+﻿<link href="~/App/Main/views/layout/layoutCss.css" rel="stylesheet" />
+
+<style>
+    .navbar-nav > .user-menu > #user_account_dropdown {
+        padding: 0px;
+        right: -1px;
+    }
+
+    .user-menu #user_account_dropdown .user-footer {
+        padding: 0;
+    }
+
+        .user-menu #user_account_dropdown .user-footer a {
+            padding: 15px 28px;
+            background: #0583dd;
+            border: none;
+            color: #f6f6f6;
+        }
+
+            .user-menu #user_account_dropdown .user-footer a:focus, .user-menu #user_account_dropdown .user-footer a:hover {
+                background: #367fa9;
+                /*background: #3c8dbc;*/
+            }
+
+    /*鼠标悬停在dropdown-menu下 显示下拉数据*/
+    .nav > li:hover .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown_hover0:hover, .dropdown_hover0:focus {
+        background: transparent !important;
+        color: #fff !important;
+        cursor: default !important;
+    }
+
+    .remvoefocus > a {
+        background-color: rgba(0,0,0,0) !important;
+    }
+</style>
+<div ng-controller="app.views.toolbar as vm">
+    <header class="main-header">
+        <a href="@Url.Action("Index", "Home")" target="_blank" class="logo">
+            <span class="logo-mini">April</span>
+            <span class="logo-lg">
+
+                April
+            </span>
+        </a>
+        <nav class="navbar navbar-static-top" role="navigation">
+            <a href="javascript:;" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                <span class="sr-only"></span>
+            </a>
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    @*公司名称*@
+                    <li class="dropdown user user-menu">
+                        <a href="javascript:;" class="dropdown-toggle toolbarFont0 dropdown0" data-toggle="dropdown">
+                            <span>April</span>
+                            <i class="iconfont icon-xiala1-copy iconCopy1"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu0" style="min-width: auto; width: auto;">
+                            <li ng-class="{true: 'active', false: ''}[topMenu.isActive]" ng-repeat="topMenu in vm.topMenus" ng-click="vm.switchTopMenu($event,topMenu)" class="user-footer">
+                                <a href="javascript:;">{{topMenu.displayName}}</a>
+                            </li>
+                        </ul>
+                    </li>
+                    @*用户头像*@
+                    <li class="dropdown user user-menu">
+                        <a href="javascript:;" class="dropdown-toggle toolbarFont0 dropdown1" data-toggle="dropdown">
+                            <img src="~/App/Main/adminlte/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                            <span class="hidden-xs" style="font-size: 16px;"><b>April</b> — </span>
+                            <span class="hidden-xs">{{vm.name}}</span>
+                            <i class="iconfont icon-xiala1-copy iconCopy1"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu0" id="user_account_dropdown" style="min-width: auto; width: auto;">
+                            <li class="user-footer">
+                                <div class="pull-right toolbarDisplay0">
+                                    <a href="@Url.Action("Logout","Account")" class="btn btn-default btn-flat">退出登录</a>
+                                    <a href="javaScript:;" ng-click="vm.changePassword()" class="btn btn-default btn-flat">修改密码</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-----个人中心   侧边栏---->
+    <aside class="main-sidebar">
+        <section class="sidebar">
+            <ul class="sidebar-menu tree" data-widget="tree">
+                <li ui-sref-active="active" ng-class="{true: 'treeview', false: ''}[child.childMenus.length>0]" ng-repeat="child in vm.childMenus">
+                    <a href="#" ng-if="child.childMenus.length>0">
+                        <i class="{{child.icon}}"></i><span>{{child.displayName}}</span>
+                        <span class="pull-right-container">
+                            <i class="iconfont icon-xiala1-copy iconCopy0 fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu" ng-if="child.childMenus.length>0">
+                        <li ui-sref-active="active" ng-repeat="three in child.childMenus">
+                            <a ui-sref="{{three.code}}">
+                                <i class="{{three.icon}}"></i><span>{{three.displayName}}</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <a ng-if="child.childMenus.length===0" ui-sref="{{child.code}}">
+                        <i class="{{child.icon}}"></i><span>{{child.displayName}}</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </aside>
+</div>
+<script type="text/javascript">
+    (function () {
+        angular.module("app").controller("app.views.toolbar",
+            [
+                "$scope", "$state", "$timeout", "$rootScope","$http",
+                function ($scope, $state, $timeout, $rootScope,$http) {
+                    var vm = this;
+                    $rootScope.category = null;
+                    vm.topMenus =@Html.Raw(ViewBag.SideBar);
+                    vm.authorizationMenus = window.authorizationMenus;//app.js中赋值了
+                    vm.topMenu = null;
+                    vm.activeMenu = null;//被激活的菜单
+                    vm.childMenus = [];
+
+                    //state改变开始事件
+                    $rootScope.$on("$stateChangeStart",
+                        function (event, toState, toParams, fromState, fromParams) {
+                            var name = toState.name;//要跳往的state的名称
+                            $rootScope.menuCode = toState.name;//为全局变量menuCode赋值
+                            if (name === "home") {                                
+                                vm.loadCookieSetMenu();
+                            } else {
+                                var items = get(vm.authorizationMenus, "code", name);
+                                if (items != null && items.length === 1) {
+                                    if (items[0].parentId != null) {
+                                        vm.topMenu = vm.loadTopMenu(items[0].parentId);//通过当前菜单递归获取其顶级菜单
+                                    }
+                                }
+                                if (vm.topMenu != null) {
+                                    //设置顶级菜单的激活状态
+                                    $.each(vm.topMenus,
+                                        function(index, item) {
+                                            if (item.id === vm.topMenu.id) {
+                                                item.isActive = true;
+                                                vm.activeMenu = item;
+                                            } else {
+                                                item.isActive = false;
+                                            }
+                                        });
+                                    var activeMenuItems = get(vm.topMenus, "isActive", true);
+                                    if (activeMenuItems != null) {
+                                        vm.childMenus = activeMenuItems[0].childMenus;
+                                        vm.activeMenu = activeMenuItems[0];
+                                    }
+                                } else {
+                                    vm.loadCookieSetMenu();
+                                }
+                            }
+                            //设置cookie
+                            var menu = get(vm.topMenus, "isActive", true)[0];
+                            setCookie("cookieMenuCategory", menu.category);
+                            $rootScope.category = menu.category;
+                        });
+
+                    //切换顶级菜单
+                    vm.switchTopMenu = function ($event, itemMenu) {
+                        var dom = $($event.target);
+                        $(dom).parent("li").removeClass("remvoefocus");
+                        if (itemMenu.isActive) { //如果点击的是激活状态的顶级菜单则直接退出
+                            return;
+                        } else {
+                            swal({
+                                    title: "确定吗？",
+                                    text: "您当前位于" + vm.activeMenu.displayName + "，是否确认切换至" + itemMenu.displayName + "，切换后所有当前页面将被关闭",
+                                    type: "warning",
+                                    showCancelButton: true,
+                                    confirmButtonColor: "#DD6B55",
+                                    confirmButtonText: "确定",
+                                    cancelButtonText: "取消",
+                                    closeOnConfirm: false,
+                                    closeOnCancel: false
+                                },
+                                function(isConfirm){
+                                    if (isConfirm) {
+                                        //所有顶级菜单的激活状态设为false
+                                        $.each(vm.topMenus,
+                                            function (index, item) {
+                                                item.isActive = false;
+                                            });
+                                        //设置点击的顶级菜单为激活状态
+                                        itemMenu.isActive = true;
+                                        vm.childMenus = itemMenu.childMenus;
+                                        vm.activeMenu = itemMenu;
+                                        //设置cookie
+                                        setCookie("cookieMenuCategory", itemMenu.category);
+                                        $rootScope.category = itemMenu.category;
+
+                                        //切换顶级菜单后默认跳转去home页
+                                        $state.go("home", null, { reload: true });
+                                    } else {
+                                        $(dom).parent("li").addClass("remvoefocus");
+                                    }
+                                });
+                        }
+                    }
+                    //基于cookie获取菜单
+                    vm.loadCookieSetMenu = function () {
+                        var cookieMenuCategory = getCookie("cookieMenuCategory");//从cookie中获取菜单分类键
+                        if (cookieMenuCategory === "" ||
+                            $.isEmptyObject(cookieMenuCategory) ||
+                            cookieMenuCategory == undefined ||
+                            cookieMenuCategory === "undefined") { //如果cookie中没有该键，说明第一次进，默认第一个
+                            //保险起见，先把所有的顶部菜单都设为未激活
+                            $.each(vm.topMenus,
+                                function(index, item) {
+                                    item.isActive = false;
+                                });
+                            //默认第一个设为激活
+                            vm.topMenus[0].isActive = true;
+                            vm.childMenus = vm.topMenus[0].childMenus;
+                            vm.activeMenu = vm.topMenus[0];
+                        } else {//cookie中存在键则通过该键来获取菜单
+                            var activeMenus = get(vm.topMenus, "category", cookieMenuCategory);
+                            if (activeMenus.length > 0) {
+                                vm.activeMenu = activeMenus[0];
+                                vm.childMenus = activeMenus[0].childMenus;
+                                //设置激活属性
+                                $.each(vm.topMenus,
+                                    function (index, item) {
+                                        item.isActive = item.id === activeMenus[0].id;
+                                    });
+                            }
+
+                        }
+                    }
+
+                    //通过递归加载当前菜单的顶级菜单
+                    vm.loadTopMenu = function (id) {
+                        var parent = get(vm.authorizationMenus, "id", id)[0];
+                        return parent.parentId == null ? parent : vm.loadTopMenu(parent.parentId);
+                    }
+                    //点击修改密码
+                    vm.changePassword = function () {
+                        sweetAlert("没实现功能");
+                    };                    
+                }
+            ]);
+    })();
+</script>

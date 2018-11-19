@@ -1,0 +1,159 @@
+﻿#LoginArea {
+    max-width: 400px;
+    margin: 120px auto 10px auto;
+}
+li {
+    list-style: none;
+}
+
+.footer {
+    background: #3c3b3b;
+    color: #777;
+}
+
+.f_title h4 {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.footerList ul li a {
+    color: #999;
+    font-size: 12px;
+}
+
+.imgList {
+    border: 1px dashed red;
+}
+
+.imgList a {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0;
+    height: 40px;
+    border: 1px dashed blue;
+}
+
+.footerList {
+    padding: 30px 0;
+}
+
+.footerList .col-xs-7 > div, .footerList .col-xs-4, .footerList .col-xs-7 {
+    padding-left: 0;
+}
+
+.footerList ul li {
+    margin-bottom: 12px;
+}
+
+.footerLink {
+    background: #1d1d1d;
+    padding: 18px 0;
+}
+
+.footerLink p {
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.footerLink p:nth-child(1) {
+    float: left;
+}
+
+.footerLink p:nth-child(2) {
+    float: right;
+}
+
+/*info  */
+.info {
+    display: table;
+    width: 100%;
+    padding: 45px 0;
+}
+
+.info li {
+    float: left;
+    width: 25%;
+    font-size: 16px;
+    border-right: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.info li:last-child {
+    border-right: none;
+}
+
+.info li:nth-child(1):before {
+    content: url('../../Public/images/home/indexSearchImg2.png');
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 15px;
+}
+
+.info li:nth-child(2):before {
+    content: url('../../Public/images/home/indexSearchImg3.png');
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 15px;
+}
+
+.info li:nth-child(3):before {
+    content: url('../../Public/images/home/indexSearchImg4.png');
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 15px;
+}
+
+.info li:nth-child(4):before {
+    content: url('../../Public/images/home/indexSearchImg5.png');
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 15px;
+}
+/*
+    底部
+*/
+.registerFooterSpan0 {
+    font-size: 24px;
+    color: #fff;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+.registerFooterSpan1 {
+    color: #bebebe;
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 65px;
+}
+
+.registerFooterImg0 {
+    margin-top: 65px;
+    margin-left: -15%;
+}
+
+.registerFooterImg0 li {
+    float: left;
+    margin-right: 5px;
+}
+
+.registerFooterP0 {
+    width: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    font-size: 12px;
+    text-align: center;
+    color: #bebebe;
+}
+
+.lazy {
+}
+

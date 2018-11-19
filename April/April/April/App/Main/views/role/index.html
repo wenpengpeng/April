@@ -1,0 +1,85 @@
+﻿<div ng-controller="app.views.role.index as vm">
+    <section class="content-header">
+        <h1>
+            角色管理
+            <small>角色列表</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> 个人中心</a></li>
+            <li class="active">角色管理</li>
+        </ol>
+    </section>
+    <section class="content container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box  box-info">
+                    <div class="box-body">
+                        <div class="mailbox-controls">
+                            <div class="btn-group">
+                                <button type="button" ng-click="vm.edit(null)" class="btn btn-default btn-sm"><i class="fa fa-fw fa-edit"></i>新增</button>
+                            </div>
+                            <button type="button" ng-click="vm.refresh()" class="btn btn-default btn-sm"><i class="fa fa-refresh"></i>刷新</button>
+                        </div>
+                        <div id="example2_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+                            <div class="row">
+                                <div class="col-sm-6"></div>
+                                <div class="col-sm-6"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <table class="table table-bordered table-hover dataTable tree" role="grid">
+                                        <thead>
+                                            <tr role="row">
+                                                <th rowspan="1" colspan="1">角色名称</th>
+                                                <th rowspan="1" colspan="1">是否有效</th>
+                                                <th rowspan="1" colspan="1">是否系统角色</th>
+                                                <th rowspan="1" colspan="1"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody ng-cloak>
+                                            <tr ng-repeat="item in vm.data">
+                                                <td>{{item.name}}</td>
+                                                <td><span class="label label-success" ng-if="item.isValid">正常</span><span ng-if="!item.isValid" class="label label-danger">锁定</span></td>
+                                                <td><span class="label label-success" ng-if="item.isSystem">是</span><span ng-if="!item.isSystem" class="label label-danger">否</span></td>
+                                                <td>
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-info btn-sm">操作</button>
+                                                        <button type="button" class="btn btn-info dropdown-toggle btn-sm" data-toggle="dropdown" aria-expanded="false">
+                                                            <span class="caret"></span>
+                                                            <span class="sr-only">Toggle Dropdown</span>
+                                                        </button>
+                                                        <ul class="dropdown-menu" role="menu">
+                                                            <li ng-if="item.isValid">
+                                                                <a href="javascript:;" ng-click="vm.lock(item)"><i class="fa fa-fw fa-lock"></i>锁定</a>
+                                                            </li>
+                                                            <li ng-if="!item.isValid">
+                                                                <a href="javascript:;" ng-click="vm.lock(item)"><i class="fa fa-fw fa-unlock"></i>解锁</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:;" ng-click="vm.edit(item)"><i class="fa fa-fw fa-edit"></i>编辑</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:;" ng-click="vm.menuAuthorization(item)"><i class="fa fa-fw fa-hand-lizard-o"></i>菜单授权</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="dataTables_paginate paging_simple_numbers" id="pagination">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

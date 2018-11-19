@@ -1,0 +1,17 @@
+﻿<link href="~/Views/Shared/Footer.css" rel="stylesheet" />
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<footer class="footer">
+    
+</footer>
+<script src="~/Scripts/jquery/jquery-2.1.4.min.js"></script>
+<script src="~/Scripts/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript">
+    /**
+     * 全局jquery禁用回车触发表单提交
+     */
+    $(document).on("keypress", ":text", function (e) {
+        if (e.keyCode == 13) {
+            e.preventDefault();
+        }
+    });
+</script>

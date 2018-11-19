@@ -1,0 +1,52 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+/*已放弃样式*/
+.publicIconStyleStandardD {
+    width: 60px;
+    text-align: center;
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+}
+/*已弃标样式*/
+.publicIconStyleStandardUp {
+    width: 60px;
+    text-align: center;
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+}
+/*待审核样式*/
+.publicIconStyleWaiting {
+    width: 60px;
+    text-align: center;
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+}
+/*未通过样式*/
+.publicIconStyleUnpass {
+    width: 60px;
+    text-align: center;
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+}
+/*已通过样式*/
+.publicIconStylePassed {
+    width: 60px;
+    text-align: center;
+    display: inline-block;
+    height:22px;
+    line-height:22px;
+}
+/*未报名样式*/
+.publicIconStyleEnroll {
+    width: 60px;
+    text-align: center;
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+}

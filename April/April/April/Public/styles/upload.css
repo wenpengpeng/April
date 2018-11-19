@@ -1,0 +1,128 @@
+﻿
+/*   ---  后台个人中心文字形式的上传样式重写 --    */
+
+/*把上传实际type = file隐藏*/
+.webuploader-container {
+    position: relative;
+}
+.webuploader-element-invisible {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px,1px,1px,1px);
+}
+[file=upload] {
+    color: #666 !important;
+}
+
+/*上传的父级 -- 看情况加*/
+.fileParent {
+    padding-top: 12px;
+}
+/*上传的兄弟 --上传的文件名显示*/
+.showName {
+    color: #666 !important;
+}
+/*上传的兄弟 --上传的文件名后的小叉叉*/
+.books {
+    z-index: 2;
+    cursor: pointer;
+    margin: 0 2px;
+    color: #666;
+    display:none;
+}
+
+
+
+/*第一套上传文件名样式*/
+.wordUpload{
+    display:inline-block;
+    vertical-align:top;
+}
+.wordUpload .webuploader-pick{
+    color:#44a5ef;
+    width:auto;
+    height:auto;
+    background:none;
+    line-height:1.4;
+}
+.wordUpload *{
+    display:inline-block;
+}
+.wordUpload .txt {
+    white-space: nowrap;
+    float: left;
+}
+.wordUpload .close {
+    font-size: 6px;
+    float: left;
+    margin-left: 5px;
+    padding-top:4px;
+}
+
+
+/****  第二套上传按钮形式 -- 转换为 -- 文字形式取消   *****/
+.edit_upload0 > .upload-btn > .webuploader-pick {
+    background: #fff;
+    color: #00b7ee;
+    margin-top: -7px;
+}
+
+
+
+/*后台个人中心按钮上传形式的样式重写 */
+.backstageBtnUpload  .upload-box{
+    display: inline-block;
+}
+.backstageBtnUpload  .upload-box:hover .webuploader-pick{
+    background:#3c8dbc;
+}
+.backstageBtnUpload .webuploader-pick {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    background: #44a5ef;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    height: 33px;
+}
+
+ /***新增class****/
+/* 前台页面上传文字样式*/
+.frontWordUpload {
+    display: inline-block;
+}
+.frontWordUpload .webuploader-pick-hover {
+    background: none;
+}
+    .frontWordUpload .webuploader-pick {
+        width: auto;
+        height: auto;
+        background: none;
+        color: #0094ff;
+        line-height: normal;
+        display: inline-block;
+    }
+.frontWordUpload * {
+    display: inline-block;
+}
+.frontWordUpload .upload-progress{
+    vertical-align:super;
+}
+.frontWordUpload .txt {
+    white-space: nowrap;
+    float: left;
+}
+.frontWordUpload .close {
+    font-size: 6px;
+    float: left;
+    margin-left: 5px;
+    padding-top: 4px;
+}
+

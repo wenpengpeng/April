@@ -1,0 +1,176 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+label{
+    font-weight:normal;
+    white-space:nowrap;
+}
+.box.box-info {
+    border-top:none;
+}
+/*
+    input表单框样式
+*/
+.publicContainerFormInput .btn  i {
+    margin-right:5px;
+}
+.publicContainerFormInput > .form-group label {
+    padding-left: 0
+}
+.publicContainerFormInput > .form-group > .publicContainerFormInputLeft {
+    padding-left:0;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+}
+.publicContainerFormInput>.form-group>.publicContainerFormInputRight{
+    height: 40px;
+    padding-left:7px;
+    padding-right:0px;
+}
+.publicContainerFormInput>.form-group>.publicContainerFormInputRight>.form-control{
+    height: 40px;
+}
+.publicContainerFormInput>.form-group{
+    width: auto;
+    height: 40px;
+}
+.publicContainerFormInputRight > .icheckbox_square {
+    top:10px;
+}
+
+.publicContainerFormInput .input-group .form-control {
+    height:40px;
+}
+.publicContainerFormInput .input-group .input-group-btn button {
+    height:40px;
+}
+
+.mailbox-controls .form-inline .form-group > label {
+    height:40px;
+    line-height:40px;
+}
+.mailbox-controls .form-inline .form-group > input {
+    height: 40px;
+}
+.mailbox-controls .form-inline .form-group > select {
+    height: 40px;
+}
+
+.publicContainerFormInput input, .publicContainerFormInput select {
+    height: 40px;
+}
+.publicContainerFormInput table input, .publicContainerFormInput table input select {
+    height: auto!important;
+}
+
+
+/*v2.0新增input集合样式*/
+.input_box .col-md-12, .input_box .col-md-12 > .publicContainerFormInput {
+    padding: 0
+}
+.input_box .col-md-12 {
+    margin-bottom: 5px;
+}
+.input_box .col-md-12 .publicContainerFormInputRight {
+    padding-left: 0;
+}
+.input_box .form-group .until {
+    text-align: center;
+}
+.line_height button {
+    margin-right: 15px;
+}
+.line_height .marginRight_15px{
+    margin-right:15px!important;
+}
+.line_height button:last-of-type{
+    margin-right:0;
+}
+.input_box input[type=checkbox], .input_box input[type=radio] {
+    height: auto !important;
+    vertical-align:text-top;
+    margin-right:7px;
+    margin-left:30px;
+}
+.input_box input[type=checkbox]:first-child , .input_box input[type=radio]:first-child{
+    margin-left:0;
+}
+.input_box .checkbox_box{
+    padding-top:10px;
+}
+
+/*joy*/
+.openBiddingCai_title0 {
+    margin-left: -30px;
+}
+.openBiddingCai_title1 {
+    margin-left: -70px;
+}
+.openBiddingCai_title2 {
+    margin-left: -95px;
+}
+.openBiddingCai_title3 {
+    margin-left: -50px;
+}
+.openBiddingCai_title4 {
+    margin-left: -20px;
+}
+.openBiddingCai_title5 {
+    margin-left: -100px;
+}
+.openBiddingCai_title6 {
+    margin-left: -145px;
+}
+.openBiddingCai_title7 {
+    margin-left: -95px;
+}
+.openBiddingCai_title8 {
+    margin-left: -19%;
+}
+.openBiddingCai_title9 {
+    margin-left: -25px;
+}
+.openBiddingCai_title10 {
+    margin-left: -30px;
+}
+.expertLine_height0{
+    line-height:40px;
+}
+
+.input-group .form-control{
+    background:#fff;
+}
+
+
+/*第三次确定input高度的公共样式 -- 基于admin的修改 -- 34px */
+
+/*左label的样式*/
+.publicInputLabel{
+    height:34px;
+    line-height:34px;
+    text-align:right;
+    padding-right:0;
+}
+/*右input无修改的样式*/
+
+/*右input后跟随标签的样式*/
+.publicInputLineHight34px{
+    line-height:34px;
+    padding-left:0;
+}
+
+/*根据页面自己调整栅格的样式*/
+.publicPaddingLeft0{
+    padding-left:0;
+}
+.publicPaddingRight0 {
+    padding-right: 0;
+}
+
+/*根据第三次，按钮的样式调整*/
+.publicInputButton button{
+    margin-right:12px;
+    margin-top:-4px;
+}

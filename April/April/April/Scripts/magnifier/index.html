@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>jQuery网站商品图片放大镜效</title>
+
+<script type="text/javascript" src="js/jquery.1.4.2-min.js"></script>
+<link rel="stylesheet" href="static.css" />
+
+</head>
+
+<body>
+
+<div class="preview">
+
+	<div id="vertical" class="bigImg">
+
+		<img src="mid/05.jpg" width="400" height="400" alt="" id="midimg" />
+
+		<div style="display:none;" id="winSelector"></div>
+
+	</div><!--bigImg end-->	
+
+	<div class="smallImg">
+
+		<div class="scrollbutton smallImgUp disabled"></div>
+
+		<div id="imageMenu">
+
+			<ul>
+
+				<li id="onlickImg"><img src="small/05.jpg" width="68" height="68" alt="洋妞"/></li>
+
+				<li><img src="small/02.jpg" width="68" height="68" alt="洋妞"/></li>
+
+				<li><img src="small/03.jpg" width="68" height="68" alt="洋妞"/></li>
+
+				<li><img src="small/04.jpg" width="68" height="68" alt="洋妞"/></li>
+
+				<li><img src="small/01.jpg" width="68" height="68" alt="洋妞"/></li>
+
+				<li><img src="small/06.jpg" width="68" height="68" alt="洋妞"/></li>
+
+				<li><img src="small/04.jpg" width="68" height="68" alt="洋妞"/></li>
+
+			</ul>
+
+		</div>
+
+		<div class="scrollbutton smallImgDown"></div>
+
+	</div><!--smallImg end-->	
+
+	<div id="bigView" style="display:none;"><img width="800" height="800" alt="" src="" /></div>
+
+</div>
+
+<script src="static.js"></script>
+
+</body>
+
+</html> 

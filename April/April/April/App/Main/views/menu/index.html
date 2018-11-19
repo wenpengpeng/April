@@ -1,0 +1,73 @@
+﻿<div>
+    <div ng-controller="app.views.menu.index as vm">
+        <section class="content container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="box box-info">
+                        <div class="box-body">
+                            <div class="alert alert-info alert-dismissible">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                <h4><i class="icon fa fa-info"></i> 温馨提示：</h4>
+                                <p>1.如果有下级的菜单时候，当前菜单的URL设置为空</p>
+                                <p>2.菜单默认为折叠状态，需要则进行展开</p>
+                            </div>
+                            <div class="mailbox-controls publicContainerFormInput">
+                                <div auth operation="Add" app="Menu" class="btn-group">
+                                    <button type="button" ng-click="vm.edit(null)" class="btn btn-primary btn-sm">新增</button>
+                                </div>
+                                <button auth operation="Show" app="Menu" type="button" ng-click="vm.refresh()" class="btn btn-default btn-sm">刷新</button>
+                            </div>
+                            <div id="example2_wrapper" class="form-inline">
+                                <div class="row">
+                                    <div class="col-sm-12 publicTableContainer">
+                                        <table class="table  table-hover dataTable tree" role="grid">
+                                            <thead>
+                                            <tr role="row">
+                                                <th rowspan="1" colspan="1">菜单名称</th>
+                                                <th rowspan="1" colspan="1">url</th>
+                                                <th rowspan="1" colspan="1">状态</th>
+                                                <th rowspan="1" colspan="1"></th>
+                                            </tr>
+                                            </thead>
+                                            <tbody ng-cloak>
+                                            <tr render-Finish ng-repeat="item in vm.data" class="treegrid-{{item.id}} {{item.parentId ? 'treegrid-parent-'+item.parentId:''}}">
+                                                <td class="table-td-left">{{item.displayName}}</td>
+                                                <td class="table-td-left">{{item.requestUrl}}</td>
+                                                <td><span class="label label-success" ng-if="item.isValid">正常</span><span ng-if="!item.isValid" class="label label-danger">锁定</span></td>
+                                                <td>
+                                                    <div class="btn-group  operate">
+                                                        <button type="button" class="btn btn-info btn-sm">操作</button>
+                                                        <button type="button" class="btn btn-info dropdown-toggle btn-sm" data-toggle="dropdown" aria-expanded="false">
+                                                            <span class="caret"></span>
+                                                            <span class="sr-only">Toggle Dropdown</span>
+                                                        </button>
+                                                        <ul class="dropdown-menu" role="menu">
+                                                            <li auth operation="Lock" app="Menu" ng-if="item.isValid">
+                                                                <a href="javascript:;" ng-click="vm.lock(item)">锁定</a>
+                                                            </li>
+                                                            <li auth operation="Lock" app="Menu" ng-if="!item.isValid">
+                                                                <a href="javascript:;" ng-click="vm.lock(item)">解锁</a>
+                                                            </li>
+                                                            <li auth operation="Update" app="Menu">
+                                                                <a href="javascript:;" ng-click="vm.edit(item)">编辑</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:;" ng-click="vm.menuAppAuthorize(item)">授权</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
